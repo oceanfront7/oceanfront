@@ -1,0 +1,177 @@
+<html>
+<meta charset="UTF-8">
+<title>travel blog</title>
+<link rel="shortcut icon" href="https://i.ibb.co/tpbvjftr/plane4.gif" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="travel.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="insidebox">
+            <div class="header">
+                <div id="bubble" style="text-align:center; padding:10px; margin-left:-35%; margin-top:5%; font-family: 'bluescreen';">oceanfront's travel blog</div>
+                <script type="text/javascript">
+                // <![CDATA[
+                var bgcolour="#6599bc"; // background colour
+                      var fgcolour="#d4feff"; // foreground colour
+                      var speed=60; // speed of bubbling, lower is faster
+                      var shades=12; // number of shades of bubble
+                       
+                      /****************************
+                      * Bubbling Text Effect *
+                      *(c)2003-13 mf2fm web-design*
+                      * http://www.mf2fm.com/rv *
+                      * DON'T EDIT BELOW THIS BOX *
+                      ****************************/
+                      var bubbcol=new Array();
+                      var bubbshd;
+                      var bubbler, bubbtxt;
+                      var bubbchr=new Array();
+                       
+                      function addLoadEvent(funky) {
+                       var oldonload=window.onload;
+                       if (typeof(oldonload)!='function') window.onload=funky;
+                       else window.onload=function() {
+                       if (oldonload) oldonload();
+                       funky();
+                       }
+                      }
+                       
+                      addLoadEvent(bubbagump);
+                       
+                      function bubbagump() { if (document.getElementById) {
+                       var i, fg, bg, col;
+                       for (bubbler=0; bubbler<=shades; bubbler++) {
+                       col="#";
+                       for (i=1; i<6; i+=2) {
+                       bg=parseInt(bgcolour.substring(i,i+2),16);
+                       fg=parseInt(fgcolour.substring(i,i+2),16);
+                       col+=dechex(bg+(fg-bg)*(bubbler/shades));
+                       }
+                       bubbcol[bubbler+1]=col;
+                       if (bubbler==Math.floor(shades/2)) bubbshd=col;
+                       }
+                       bubbler=document.getElementById("bubble");
+                       bubbtxt=bubbler.firstChild.nodeValue;
+                       while (bubbler.childNodes.length) bubbler.removeChild(bubbler.childNodes[0]);
+                       for (i=0; i<bubbtxt.length; i++) {
+                       fg=document.createElement("span");
+                       fg.setAttribute("id", "bubb"+i);
+                       fg.style.textShadow=bubbshd+" 0px 0px 2px";
+                       fg.appendChild(document.createTextNode(bubbtxt.charAt(i)));
+                       bubbler.appendChild(fg);
+                       }
+                       bubbler=setInterval("bubbling()", speed);
+                      }}
+                       
+                      function dechex(dec) {
+                       dec=Math.floor(dec);
+                       return ((dec<16)?'0':'')+dec.toString(16);
+                      }
+                       
+                      function bubbling() {
+                       var i, bubby;
+                       for (i=0; i<bubbtxt.length; i++) {
+                       bubby=document.getElementById("bubb"+i);
+                       if (bubbchr[i]) {
+                       bubby.style.color=bubbcol[bubbchr[i]];
+                       bubbchr[i]=(bubbchr[i]+1)%bubbcol.length;
+                       }
+                       else if (Math.random()<7.5/(shades*bubbtxt.length)) bubbchr[i]=1;
+                       }
+                      }
+                      // ]]>
+                 </script>
+            </div>
+         </div>
+
+         </div>
+         <!--switzerland-->
+         <a href=""><img src="https://i.ibb.co/8LQhCJJn/imageedit-6-2581492543.png" style="width:20px; margin-left:748px; margin-top:95px; position: absolute; z-index:100;"></a>
+         <!--NYC-->
+         <a href=""><img src="https://i.ibb.co/8LQhCJJn/imageedit-6-2581492543.png" style="width:20px; margin-left:655px; margin-top:105px; position: absolute; z-index:100;"></a>
+        <!--seattle-->
+        <a href=""><img src="https://i.ibb.co/8LQhCJJn/imageedit-6-2581492543.png" style="width:20px; margin-left:610px; margin-top:90px; position: absolute; z-index:100;"></a>
+        <!--india-->
+        <a href=""><img src="https://i.ibb.co/8LQhCJJn/imageedit-6-2581492543.png" style="width:20px; margin-left:830px; margin-top:120px; position: absolute; z-index:100;"></a>
+    </div>
+         <img src="https://i.ibb.co/8LQSgzPL/istockphoto-1093514566-612x612-removebg-preview.png" style="width:400px; margin-left:560px; margin-top:20px; position: fixed; z-index: 1;">
+    <div class="textbox">
+        <div class="diary">
+            <iframe src="https://oceanfront.neocities.org/travel-entry/intro" name="page" width="445" height="520" style="border:none; margin-left:5%;"></iframe>
+            </div>
+       
+    </div>
+    <div class="nav1">
+        <p><div class="dropdown">
+            <button class="dropbtn" style="font-family: 'MsGothic';">North America</button>
+            <div class="dropdown-content">
+            <a href="#">Washington, D.C</a>
+            <a href="#">Cape Cod, Massachussetts</a>
+            <a href="#">New York City, New York</a>
+            <a href="#">Raleigh, North Carolina</a>
+            <a href="#">Orlando, Florida</a>
+            <a href="#">Seattle, Washington</a>
+            </div>
+          </div></p>
+        <p><div class="dropdown">
+            <button class="dropbtn" style="font-family: 'MsGothic';">Europe</button>
+            <div class="dropdown-content">
+            <a href="#">Zurich, Switzerland</a>
+            <a href="#">Frankfurt, Germany</a>
+            </div>
+          </div></p>
+        <p><div class="dropdown">
+            <button class="dropbtn" style="font-family: 'MsGothic';">Asia</button>
+            <div class="dropdown-content">
+            <a href="#">Uttarakhand, India</a>
+            </div>
+          </div></p>
+          <p><div class="dropdown">
+            <button class="dropbtn" style="font-family: 'MsGothic';">Future Destination</button>
+            <div class="dropdown-content">
+            </div>
+          </div></p>
+    </div>
+
+    <div class="nav1" style="width: 160px; height: 220px; margin-left: 82%; margin-top:-12%;">
+        <img src="https://64.media.tumblr.com/8dea768e798367a6ce33792d1ce79c8c/0f41735d44b7eca8-14/s250x400/1dcfde7e7b49f54c4611f300cfef18108bdb4138.gif" style="width:100%; margin-top:4%; overflow: hidden;">
+        <h1 style="align-self: center; margin-left:6%;">follow by rss feed</h1>
+        <a href="#" style="align-self: center; margin-left:30%;  margin-bottom:5%;">click me!</a>
+        <br><br>
+        <a href="https://oceanfront.neocities.org/photobook" style="align-self: center; margin-left:16%;font-size:18px; margin-top: 10%;  margin-bottom:5%;">my photobook</a>
+
+
+        <select id="archives-dropdown-2" name="archive-dropdown" style="margin-left:10%; margin-top:10%; background-color: #ffffe9; border-color: rgb(99, 164, 190); padding:5px; border-radius: 10px; color:  rgb(35, 106, 134);">
+			<option value="" style="font-family: 'MsGothic';">entries by month</option>
+				<option value=""> march 2025 </option>
+	<option value=""> june 2024 </option>
+		</select>
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            
+            (function() {
+                var dropdown = document.getElementById( "archives-dropdown-2" );
+                function onSelectChange() {
+                    if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+                        document.location.href = this.options[ this.selectedIndex ].value;
+                    }
+                }
+                dropdown.onchange = onSelectChange;
+            })();
+            
+            /* ]]> */
+            </script>
+    </div>
+    <img src="https://i.ibb.co/S5Dm5WJ/sp01549.gif" style="width:230px; margin-left:55.7%; margin-top:-8.5%; opacity: 0.7;">
+</main>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+h1 {
+    background-image: url(https://i.pinimg.com/originals/fd/7c/c7/fd7cc7555114fb52a5908e200dad91a3.gif);
+    color:#9fc2e3;
+     background-color: #eed9f2;
+     font-family: "bluescreen";
+     border-radius: 15px;
+     font-size: 30px;
+ }
+ 
+h2 {
+ color: #78cad8;
+ text-shadow: -0px -1px 0 #297885, 1px -1px 0 #297885, -1px 1px 0 #297885, 1px 1px 0 #297885;
+ font-size: 16px;
+ padding-bottom: 5px;
+ line-height: 1.3;
+ letter-spacing: 0.9;
+ font-family:'MSGothic';
+}
+
+p {
+ color:#64a3cd;
+ letter-spacing: 0.5;
+ font-size: 15px;
+line-height: 1.9;
+margin-left: 5px;
+font-family: "bluescreen";
+padding:3px;
+}
+
+a:link {
+color: #81afc8;
+}
+
+a:visited {
+color: #6f9bbf;
+}
+
+a:hover {
+color: #81afc8;
+}
+
+a:active {
+color: #81afc8;
+}
+
+span {
+    text-align: center;
+  }
+  
+  :root {
+    --body-bg-image: url(https://sakuradreams.neocities.org/Images/Background02.gif);
+  }
+  
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #81afc8;
+    border-radius: 10px;
+   border: 1.5px dashed #A2D5F8;
+  }
+  *::-webkit-scrollbar-track {
+    background: #7287ae;
+  }
+  
+  body {
+    font-family: 'Basiic', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    background-size: 65px;
+    color: #999999;
+    cursor: url(cursor.cur), auto;
+    background-image: var(--body-bg-image);
+    }
+    

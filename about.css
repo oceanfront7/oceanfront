@@ -1,0 +1,343 @@
+.mainbox {
+    background-color: #FFFFFF;
+    border: 1.5px dashed #A2D5F8;
+    padding: 20px;
+      width: 870px;
+      height: 760px;
+      margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+   }
+  
+   #container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+   element-class:pointer {
+    cursor: url(cursor.cur), pointer;
+  }
+  
+   span {
+    text-align: center;
+  }
+
+  :root {
+    --body-bg-image: url(https://oceanfront.neocities.org/photos/webfiles/Background02.gif);
+  }
+  
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #81afc8;
+    border-radius: 10px;
+   border: 1.5px dashed #A2D5F8;
+  }
+  *::-webkit-scrollbar-track {
+    background: #7287ae;
+  }
+
+
+body {
+    font-family: 'Basiic', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    background-size: 65px;
+    color: #999999;
+    cursor: url(cursor.cur), auto;
+    background-image: var(--body-bg-image);
+    }
+  
+  #container {
+    width: 100%;
+    height: 100%;
+   }
+
+   .header {
+    border-width: 1px;
+      border-style: solid;
+      border-color: #A2D5F8;
+      border-radius: 9px;
+      background-image: url(https://i.pinimg.com/originals/91/b7/a3/91b7a38b5f18cea70c20ae0e1d3a2fe6.gif);
+      background-size: cover;
+      height: 80px;
+      border-radius: 30px;
+      box-shadow: 0 0 8px 8px white inset;
+     padding:4px;
+     text-align: center;
+     align-items:center;
+  }
+  
+   .profilepic {
+    background-color: #ffffff;
+    border: 1px solid #A2D5F8;
+    box-shadow: inset #b0e0f4 0 0 5px;
+    border-radius: 5px;
+    width: 16rem;
+    align-items: center;
+    height: 16rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 9px;
+    line-height: 2;
+    color:#81afc8;
+   }
+
+   .buttons {
+    background-color: #ffffff;
+    border: 1px solid #A2D5F8;
+    box-shadow: inset #b0e0f4 0 0 5px;
+    border-radius: 15px;
+    width: 16rem;
+    height: 2.9rem;
+    margin-top: -256px;
+    margin-bottom: -8px;
+    margin-left: 300px;
+    line-height: 2;
+    z-index: 0;
+    color:#81afc8;
+    background-color: #ffffff;
+    background-size: cover;
+    border-top: 3px groove #9bcae2;
+    border-right: 3px groove #9bcae2;
+
+    color: #2f89ff;
+    filter: drop-shadow(0px 0px 1px #9bcae2);
+   }
+
+   .aboutme {
+    background-color: #ffffff;
+    border: 1px solid #A2D5F8;
+    box-shadow: inset #b0e0f4 0 0 5px;
+    border-radius: 5px;
+    width: 16rem;
+    height: 14rem;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 9px;
+    line-height: 2;
+    color:#81afc8;
+    background-image: url(photos/webfiles/blue_pattern.jpg);
+   }
+
+   .hobbies {
+    background-color: #ffffff;
+    border: 1px solid #A2D5F8;
+    box-shadow: inset #b0e0f4 0 0 5px;
+    border-radius: 5px;
+    width: 16.5rem;
+    height: 10rem;
+    margin-top: 230px;
+    margin-left: 295px;
+    border-radius: 9px;
+    line-height: 2;
+    color:#81afc8;
+    background-image: url(https://i.ibb.co/gJdTQYR/image.png);
+
+   }
+
+   .favoritecharacter {
+    background-color: #ffffff;
+    border: 1px solid #A2D5F8;
+    box-shadow: inset #b0e0f4 0 0 5px;
+    border-radius: 5px;
+    width: 7.5rem;
+    height: 8rem;
+    margin-top: -500px;
+    margin-left: 580px;
+    border-radius: 9px;
+    line-height: 2;
+    color:#81afc8;
+    background-image: url(https://i.ibb.co/gJdTQYR/image.png);
+   }
+
+   .favoritethings {
+    background-color: #ffffff;
+    border: 1px solid #A2D5F8;
+    box-shadow: inset #daf1fb 0 0 10px;
+    border-radius: 5px;
+    width: 7.5rem;
+    height: 8rem;
+    margin-left: 725px;
+    margin-top: -130px;
+    border-radius: 9px;
+    line-height: 2;
+    color:#81afc8;
+    background-image: url(https://i.pinimg.com/originals/83/f1/de/83f1de60f7eae7c2815a654ad47ab004.gif);
+   }
+
+
+   .ilike {
+    background-color: #ffffff;
+    border: 1px solid #A2D5F8;
+    box-shadow: inset #daf1fb 0 0 10px;
+    border-radius: 5px;
+    width: 7.5rem;
+    height: 8rem;
+    margin-left: 580px;
+    margin-top: 140px;
+    overflow: auto;
+    overflow-x: hidden;
+    border-radius: 9px;
+    line-height: 2;
+    color:#81afc8;
+    background-image: url(-https://i.pinimg.com/originals/83/f1/de/83f1de60f7eae7c2815a654ad47ab004.gif);
+   }
+
+   h1 {
+    background-image: url(https://i.pinimg.com/originals/fd/7c/c7/fd7cc7555114fb52a5908e200dad91a3.gif);
+    color:#9fc2e3;
+     background-color: #eed9f2;
+     font-family: "bluescreen";
+     border-radius: 15px;
+     font-size: 30px;
+ }
+ 
+h2 {
+ color: #78cad8;
+ text-shadow: -0px -1px 0 #297885, 1px -1px 0 #297885, -1px 1px 0 #297885, 1px 1px 0 #297885;
+ font-size: 16px;
+ padding-bottom: 5px;
+ line-height: 1.3;
+ letter-spacing: 0.9;
+ font-family:'MSGothic';
+}
+
+p {
+ color:#5189af;
+ letter-spacing: 0.5;
+ font-size: 15px;
+line-height: 0.95;
+margin-left: 5px;
+font-family: "MSGothic";
+padding:3px;
+}
+
+.inside {
+    margin-left: 20px; 
+    margin-top: 30px;
+}
+
+img {
+  margin-left: -10px;
+  margin-top: -15px;
+  align-items: center;
+}
+
+.imagemeow {
+  margin-left: -10px;
+  margin-top: -15px;
+  align-items: center;
+  margin-left: 20px; 
+  margin-top: 30px;
+}
+
+.youtube {
+  width: 160px;
+  height: 110px; 
+}
+
+.albumbox {
+  width: 825px;
+  height: 100px; 
+opacity: 40%;
+  overflow:hidden;
+  align-items: center;
+  margin-left: 25px;
+  margin-top:0px;
+  position:static;
+  filter: sepia(95%) hue-rotate(180deg) grayscale(0%) saturate(200%);
+
+}
+
+
+  a:link {
+    color: #81afc8;
+    border-top: dotted 1px;
+  }
+  
+  a:visited {
+    color: #6f9bbf;
+    border-top: dotted 1px;
+  }
+  
+  a:hover {
+    color: #81afc8;
+    border-top: dotted 1px;
+  }
+  
+  a:active {
+    color: #81afc8;
+    border-top: dotted 1px;
+  }
+
+  .picturetext {
+    font-size: 1rem;
+    filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(1px 1px 1px #8ba3cf);
+    color: #6586b6;
+    font-family:'MSGothic';
+  }
+
+  #cinnamonphone {
+    z-index: 999;
+    margin-top: 195px;
+    float:inherit;
+    z-index: 100;
+    animation-name: hover;
+    }
+
+    .music {
+      background-color: #ffffff;
+      border: 1px solid #A2D5F8;
+      box-shadow: inset #b0e0f4 0 0 5px;
+      border-radius: 5px;
+      width: 15.5rem;
+      height: 12rem;
+      margin-top: -330px;
+      margin-left: 600px;
+      border-radius: 9px;
+      line-height: 2;
+      color:#81afc8;
+      background-image: url(photos/webfiles/blue_pattern.jpg);
+     }
+  
+
+
+  #floatingchat {
+  z-index: 100;
+  margin-top: -200px;
+  animation-name: hover;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  }
+
+  @font-face {
+    src: url("fonts/Blue\ Screen.ttf"); 
+     format("truetype");
+    font-family: "bluescreen";
+    }
+
+  @font-face {
+    src: url("fonts/MSGothic.ttf"); 
+     format:("truetype");
+    font-family: "MSGothic";
+    }
+
+    @font-face {
+      src: url("fonts/PatrickHand-Regular.ttf"); 
+       format:("truetype");
+      font-family: "patrickhand";
+      }
+
+  @keyframes hover {
+    0%, 100% {
+      transform: translateY(-10px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(20px) rotate(3deg);
+  }
+
+  

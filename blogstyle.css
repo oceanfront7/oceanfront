@@ -1,0 +1,156 @@
+
+/******** main visible boxes ********/
+
+body {
+    background-image: url(https://i.pinimg.com/1200x/eb/86/53/eb86535ca274bbda9977b8d559b3919f.jpg-);
+    background-repeat: repeat;
+    background-size:cover;
+}
+
+main {
+    width:85%;
+    height:91%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 2.5%;
+    align-self: center;
+    background-color: rgb(235, 250, 255);
+    border-radius: 20px;
+    border: 4px dotted #c4e4e6;
+    box-shadow: 0 0 20px 20px rgba(255, 255, 249, 0.6);
+    border: ridge 3px rgb(252, 254, 255);
+    border-radius: 10px;
+    background-image: url(https://i.pinimg.com/736x/a9/93/52/a9935287ecf7c087a455ab738e829cac.jpg);
+    background-size:cover;
+}
+
+  .insidebox{
+        width: 98.4%;
+        height: 20%;
+        overflow:hidden;
+        background: rgb(198, 227, 239);
+        background: linear-gradient(90deg, rgb(205, 241, 255) 0%, rgb(129, 178, 211) 100%);
+        background: -webkit-linear-gradient(90deg, rgb(205, 241, 255) 0%, rgb(129, 178, 207) 100%); 
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9FBFCC", endColorstr="#ADC8D1", GradientType=1 );
+        border: 1px solid #a6afbf;
+   }
+
+        .header{
+       /* background: url(https://i.pinimg.com/1200x/24/c4/65/24c4652004f274378a1f106623e70e60.jpg); */ 
+        background-size: cover;
+        margin-left:2.2%;
+        margin-top:0.5%;
+        background-position: -0px;
+        border-radius: 10px;
+        width: 95%;
+        height: 90%;
+        box-shadow:rgb(255 255 255) 0px 0px 20px 8px inset, rgb(25 36 48 /15%) 0px 8px 5px 0px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        }
+
+.writingbox {
+  width:52%;
+  height:70%;
+  margin-top: 2%;
+  margin-left: 2%;
+  background-color: #c4dce6;
+  border: 1.5px solid #6599bc;
+}
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  width:95%;
+}
+
+#mydivheader {
+  z-index: 10;
+}
+
+/******* animation **********/
+
+ #fuck {
+                             -webkit-animation: pop 1s ease-in-out infinite alternate;
+                             animation: pop 1s ease-in-out infinite alternate;
+                             -moz-animation: pop 1s ease-in-out infinite alternate;
+                            }
+                            
+                            @keyframes pop {
+                            from {
+                            transform:scale(0.992)
+                            }
+                            
+                            50% {
+                            transform:scale(1)
+                            }
+                            
+                            to {
+                            transform:scale(0.992)
+                            }
+                            }
+                            
+                            @-webkit-keyframes pop {
+                            from {
+                            -webkit-transform:scale(0.992)
+                            
+                            }
+                            
+                            50% {
+                            -webkit-transform:scale(1)
+                            
+                            }
+                            
+                            to {
+                            -webkit-transform:scale(0.992)
+                            
+                            }
+                            }
+
+
+/*********** text *********/
+
+    hr {
+        background-image: url(https://watermelon.crd.co/assets/images/gallery16/24025842.gif?v=6332de85);
+        border: 1.2px solid #a7b8f0;
+        display: block;
+    }
+
+    #bubble {
+        font-size: 50px;
+        color: #6599bc;
+       
+    }
+
+          h1 {
+        font-size: 3.5em;
+        margin-top: 30px;
+        margin-left: 100px;
+        color: #ffffff;
+        text-shadow: 0 0 5px rgb(212, 202, 255);
+        text-align: left;
+    }
+
+      p {
+        font-family: 'MsGothic';
+      }
+
+      a {
+        font-family: 'MsGothic';
+        color:#57a8be;
+
+      }
+
+      @font-face {
+        font-family: bluescreen;
+        src: url(fonts/Blue\ Screen.ttf);
+      }
+
+      @font-face {
+        font-family: MsGothic;
+        src: url(fonts/MSGothic.ttf);
+      }
+
+
+

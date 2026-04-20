@@ -1,0 +1,150 @@
+
+/************** BASIC **************/
+
+        body {
+        margin:100px;
+        margin-top:70px;
+        margin-bottom:40px;
+        display: flex;
+        font-family: 'Basiic', sans-serif;
+        font:15px;
+        font-family: 'MSGothic';
+        letter-spacing:1px;
+        color: #718b9a;
+        cursor: url(cursor.cur), auto;
+        background-image: url(photos/webfiles/Background02.gif);
+    }
+
+    ::selection {
+        background-color: #c2f4ff;
+    }
+
+    .column {
+        width: 80%;
+    }
+
+    .photo {
+        margin-bottom:10px;
+        transition: transform 0.2s;
+    }
+
+    .photo:hover {
+        transform: translateY(-5px) rotate(1deg);
+        box-shadow: 0px 5px 10px rgba(43, 94, 142, 0.25);
+    }
+
+    .photo.hidden {
+        display: none;
+    }
+
+    .photo-img {
+        width: 100%;
+        overflow: hidden;
+        max-height: 400px;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #fdfeff;
+        /* border-bottom: 3px solid #7097ab; */
+    }
+   
+    .photo-img img,
+    .photo-img video {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .home, .photos, .posts {
+        width: 80%;
+        margin-left:10%;
+    }
+
+    .photo-grid {
+        max-width: 100%;
+        display: flex;
+        gap: 12px;
+        margin: auto;
+    }
+
+    .photo-caption {
+        background-color: rgb(243, 246, 248);
+        padding:5px;
+        font-size:14px;
+        border: 1px solid #7097ab;
+    }
+
+/************** LIGHTBOXES **************/
+
+   .lightbox {
+       display: none;
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(24, 33, 41, 0.85);
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .lightbox.active {
+       display: flex;
+   }
+   
+   .lightbox-content {
+       max-width: 90%;
+       max-height: 90%;
+       position: relative;
+   }
+   
+   .lightbox-content img,
+   .lightbox-content video {
+       max-width: 100%;
+       max-height: 90vh;
+       object-fit: contain;
+   }
+   
+   .lightbox-caption {
+       color: white;
+       text-align: center;
+       margin-top: 15px;
+       font-size: 14px;
+       font-family: 'kodemono';
+   }
+   
+   .lightbox-close {
+       position: absolute;
+       top: 20px;
+       right: 30px;
+       font-size: 40px;
+       color: white;
+       cursor: pointer;
+       z-index: 1001;
+   }
+
+/************** RESPONSIVE IMAGES **************/
+  
+@media (max-width: 800px) {
+    body {
+        display: block;
+        margin: 10%;
+    }
+ 
+    .column {
+        max-width: 100%;
+    }
+
+     .photo-grid {
+        display: inline-block;
+    }
+    
+}
+
+/************** TEXT **************/
+
+    @font-face {
+  font-family: 'MSGothic';
+  src: url(fonts/MSGothic.ttf);
+    }

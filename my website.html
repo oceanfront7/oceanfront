@@ -1,0 +1,292 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>oceanfront</title>
+<link rel="shortcut icon" href="https://oceanfront.neocities.org/photos/webfiles/shell3.gif" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+
+<body>
+<main>
+      <article class="mainbox">
+        <div class="header">
+          <div id="bubble" style="text-align:center; padding:10px;">oceanfront</div>
+          <script type="text/javascript">
+          // <![CDATA[
+          var bgcolour="#5db0d4"; // background colour
+                var fgcolour="#a3daf0"; // foreground colour
+                var speed=60; // speed of bubbling, lower is faster
+                var shades=12; // number of shades of bubble
+                 
+                /****************************
+                * Bubbling Text Effect *
+                *(c)2003-13 mf2fm web-design*
+                * http://www.mf2fm.com/rv *
+                * DON'T EDIT BELOW THIS BOX *
+                ****************************/
+                var bubbcol=new Array();
+                var bubbshd;
+                var bubbler, bubbtxt;
+                var bubbchr=new Array();
+                 
+                function addLoadEvent(funky) {
+                 var oldonload=window.onload;
+                 if (typeof(oldonload)!='function') window.onload=funky;
+                 else window.onload=function() {
+                 if (oldonload) oldonload();
+                 funky();
+                 }
+                }
+                 
+                addLoadEvent(bubbagump);
+                 
+                function bubbagump() { if (document.getElementById) {
+                 var i, fg, bg, col;
+                 for (bubbler=0; bubbler<=shades; bubbler++) {
+                 col="#";
+                 for (i=1; i<6; i+=2) {
+                 bg=parseInt(bgcolour.substring(i,i+2),16);
+                 fg=parseInt(fgcolour.substring(i,i+2),16);
+                 col+=dechex(bg+(fg-bg)*(bubbler/shades));
+                 }
+                 bubbcol[bubbler+1]=col;
+                 if (bubbler==Math.floor(shades/2)) bubbshd=col;
+                 }
+                 bubbler=document.getElementById("bubble");
+                 bubbtxt=bubbler.firstChild.nodeValue;
+                 while (bubbler.childNodes.length) bubbler.removeChild(bubbler.childNodes[0]);
+                 for (i=0; i<bubbtxt.length; i++) {
+                 fg=document.createElement("span");
+                 fg.setAttribute("id", "bubb"+i);
+                 fg.style.textShadow=bubbshd+" 0px 0px 2px";
+                 fg.appendChild(document.createTextNode(bubbtxt.charAt(i)));
+                 bubbler.appendChild(fg);
+                 }
+                 bubbler=setInterval("bubbling()", speed);
+                }}
+                 
+                function dechex(dec) {
+                 dec=Math.floor(dec);
+                 return ((dec<16)?'0':'')+dec.toString(16);
+                }
+                 
+                function bubbling() {
+                 var i, bubby;
+                 for (i=0; i<bubbtxt.length; i++) {
+                 bubby=document.getElementById("bubb"+i);
+                 if (bubbchr[i]) {
+                 bubby.style.color=bubbcol[bubbchr[i]];
+                 bubbchr[i]=(bubbchr[i]+1)%bubbcol.length;
+                 }
+                 else if (Math.random()<7.5/(shades*bubbtxt.length)) bubbchr[i]=1;
+                 }
+                }
+                // ]]>
+           </script>
+       </div>
+      <article class="hitcount">
+        <div class="inner" style="text-align: center;">
+          <h2 style="margin-top: 8px;">hit counter</h2>
+      </div>
+  <div id="counterbox">
+     <!-- FC2 Counter  Starts here -->
+<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39915077&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39915077&main=1"/></noscript>
+
+</div> 
+<a href="https://info.flagcounter.com/o856"><img src="https://s11.flagcounter.com/count/o856/bg_FFFFFF/txt_5EA3B8/border_FFFFFF/columns_2/maxflags_10/viewers_3/labels_0/pageviews_1/flags_0/percent_0/" padding="50px" height="65px" border="0"></a></article>
+      
+      <article class="navbox">
+        <div class="inner" style="text-align: center;">
+        <h2>navigation</h2>
+        
+        <div class="button"><a href="https://oceanfront.neocities.org/about" style="margin-right:8px;"><img src="photos/webfiles/umbrellapixel.gif" style="margin-top:-10px; margin-right:5px;" alt="">about me</a></div>
+        <div class="button"><a href="https://oceanfront.neocities.org/journal" style="margin-right:8px;"><img src="photos/webfiles/cinnamorollpixel.gif" style="margin-top:-10px; margin-right:5px;" alt=""> journal</a></div>
+        <div class="button"><a href="https://oceanfront.neocities.org/photobook" style="margin-right:8px;"><img src="photos/webfiles/cinnamorollpixel2.gif" style="margin-top:-10px; margin-right:5px;" alt=""> photobook</a></div>
+        <div class="button"><a href="https://oceanfront.neocities.org/researchjournal" style="margin-right:8px;"><img src="photos/webfiles/pencil.gif" style="margin-top:-10px; margin-right:5px;" alt=""> research jr.</a></div>
+         <div class="button"><a href="https://oceanfront.neocities.org/graphics/mainpage" style="margin-right:8px;"><img src="photos/webfiles/shell3.gif" style="margin-top:-10px; margin-right:5px;" alt=""> graphics</a></div>
+       <!--- <div class="button"><a href="https://oceanfront.neocities.org/artbook" style="margin-right:8px;"><img src="photos/webfiles/musicnotepixel.gif" style="margin-top:-10px; margin-right:5px;" alt=""> artwork</a></div> --->
+        <div class="button"><a href="https://oceanfront.neocities.org/shrinehome" style="margin-right:8px;"><img src="photos/webfiles/pipluppixel.gif" style="margin-top:-10px; margin-right:5px;" alt=""> shrines</a></div>
+        <div class="button"><a href="https://oceanfront.neocities.org/musicworld" style="margin-right:8px;"><img src="https://i.imgur.com/srqGuOf.gif" alt="">music world</a></div>
+        <div class="button"><a href="https://oceanfront.neocities.org/games" style="margin-right:8px;"><img src="photos/webfiles/tamogotchipixel.gif" alt=""> games</a></div>
+        <div class="button"><a href="https://oceanfront.neocities.org/travel" style="margin-right:8px;"><img src="https://i.imgur.com/UMG7VlK.gif"> travelling</a></div>
+        <div class="button"><a href="https://oceanfront.neocities.org/credits" style="margin-right:8px;"><img src="https://i.ibb.co/HT3W3cF5/tumblr-608e7c8991758425554f11d91ab62290-22b26ef0-75.webp"> credits</a></div>
+        
+
+        <p style="color: #ffffff; text-shadow: -2px -2px 1px #81acd1, -2px -2px 1px #81acd1, 2px -2px 0px #81acd1, -2px 2px 0px #81acd1,
+        -2px -2px 1px #81acd1, -2px -2px 1px #81acd1, 2px -2px 0px #81acd1, -2px 2px 0px #81acd1,
+        -2px 1px 1px #81acd1,-2px 4px 1px #81acd1,
+        -2px -2px 1px #81acd1, -2px -2px 1px #81acd1, 2px 2px 0px #81acd1; margin-bottom:1px; margin-top:-8px;">outgoing</p>
+        <div class="button"> <a href="https://oceanfront.atabook.org/?page=1" style="margin-right:8px;"><img src="photos/webfiles/fishjellyshort.gif" style="margin-top:-10px; margin-right:5px;" alt="">guestbook</a></div>
+        <div class="button"> <a href="https://neocities.org/site/oceanfront" style="margin-right:5px;"><img src="photos/webfiles/rosepixel.gif" style="margin-top:-10px; margin-right:5px;" alt="">neocities profile</a></div>
+      </article>
+      
+      
+      <article class="intro">
+        <h1 style="text-align:center; margin:10px;">welcome to amo site</h1>
+        <img src="photos/webfiles/jellyfish.gif" id="floating" style="float: left; height: 9rem; scale: 1;">
+        <div class="aboutmetext"
+        <p style="text-align:center;">
+          my name is ari and welcome to my site <img src="photos/webfiles/dolphinpixel.gif" margin-left="2px" height="16px"> i am a cinnamoroll dramatical murder loving guy who also likes html <img src="photos/webfiles/littleman.gif" margin-left="2px" height="16px">
+          i made this site for fun but i also want to use it to host pixels, my works, shrines, etc. i hope you enjoy my website and have a great day ^.^</p>
+        </div>      
+      </article>
+      
+      <article class="status">
+        <div id="statusimage"></div>
+<script type="text/javascript"> 
+  rssfeed_url = new Array(); 
+  rssfeed_url[0]="https://status.cafe/users/oceancity.atom";  
+  rssfeed_frame_width="170"; 
+  rssfeed_frame_height="150"; 
+  rssfeed_scroll="off"; 
+  rssfeed_scroll_step=""; 
+  rssfeed_scroll_bar="off"; 
+  rssfeed_target="_blank"; 
+  rssfeed_font_size="12"; 
+  rssfeed_font_face="MSGothic"; 
+overflow="scroll";
+  rssfeed_border="off"; 
+  rssfeed_css_url="https://oceanfront.neocities.org/rssfeed.css"; 
+  rssfeed_title="off"; 
+  rssfeed_title_name=""; 
+  rssfeed_title_bgcolor="#3366ff"; 
+  rssfeed_title_color="#55a0ff"; 
+  rssfeed_title_bgimage=""; 
+  rssfeed_footer="off"; 
+  rssfeed_footer_name="rss feed"; 
+  rssfeed_footer_bgcolor="#fff"; 
+  rssfeed_footer_color="#333"; 
+  rssfeed_footer_bgimage=""; 
+  rssfeed_item_title_length="12"; 
+  rssfeed_item_title_color="#666"; 
+  rssfeed_item_bgcolor="#fff"; 
+  rssfeed_item_bgimage=""; 
+  rssfeed_item_border_bottom="on"; 
+  rssfeed_item_source_icon="off"; 
+  rssfeed_item_date="on"; 
+  rssfeed_item_description="on"; 
+  rssfeed_item_description_length="500"; 
+  rssfeed_item_description_color="#7494ab"; 
+  rssfeed_item_description_link_color="#55a0ff"; 
+  rssfeed_item_description_tag="off"; 
+  rssfeed_no_items="1"; 
+  rssfeed_cache = "a4bd1693b662805115780df5754d9ba1"; 
+  //--> 
+  </script> 
+  <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script> 
+      </article>
+      
+      <div class="stamps">
+        <div class="marqueemeow">
+
+            <img src="photos/webfiles/mikustamp.png" alt="">
+            <img src="photos/webfiles/musicismylife.gif" alt="">
+            <img src="photos/webfiles/oceanstamp.png" alt="">
+            <img src="photos/webfiles/aobastamp.gif" alt="">
+            <img src="photos/webfiles/cinnamorollstamp.gif" alt="">
+            <img src="photos/webfiles/clearstamp.png" alt="">
+            <img src="photos/webfiles/cinnamorollstamp.png" alt="">
+            <img src="photos/webfiles/AKFGstamp.gif" alt="">
+            <img src="photos/webfiles/cinnamorollstamp2.png" alt="">
+            <img src="https://i.ibb.co/hMGP7kL/172688392712539417.png" alt="">
+            <img src="photos/webfiles/iloverainstamp.gif" alt="">
+            <img src="photos/webfiles/bucktickstamp.gif" alt="">
+            <img src="https://i.ibb.co/fvh2qr0/PERFUME-1.png" alt="">
+            <img src="photos/webfiles/pinocchiostamp.gif" alt="">
+            <img src="photos/webfiles/waterpokemon.gif" alt="">
+            <img src="https://i.ibb.co/7x0MND83/image.png" alt="">
+            <img src="https://i.ibb.co/351Lw252/image.png" alt="">
+            <img src="https://i.ibb.co/jmRVkK1/image.png" alt="">
+            
+            
+        </div>
+        </div>
+      
+        <div class="music">
+          <div class="player">
+            <div class="tophalf">
+                <div class="track-art" style="background-image: url(https://i.ibb.co/SXBPMxBz/0x1900-000000-80-0-0.jpg);"></div>
+                <div class="details">
+            <div class="topdetails">
+                      <div class="track-name">LOVE DOLL</div>
+                      <div class="track-artist">DECO*27</div>
+            </div>
+            <div class="buttons">
+              <div class="prev-track" onclick="prevTrack()"><img src="https://i.ibb.co/0jkmgR2R/Step-backward-font-awesome-svg.png" style= width:20px; height="20px"></div>
+              <div class="playpause-track" onclick="playpauseTrack()"><img src="https://i.ibb.co/dwnY9W3S/Font-Awesome-5-solid-play-circle-svg.png" style= width:20px; height="20px"></div>
+              <div class="next-track" onclick="nextTrack()"><img src="https://i.ibb.co/twZBrV3Z/Step-forward-font-awesome-svg.png" style= width:20px; height="20px"></div>
+    </div>
+                  </div>
+            </div>
+            <div class="bottomhalf">
+                <!-- time -->
+                 
+                <div class="slider_container">
+                  <div class="current-time">00:00</div>
+                  <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                  <div class="total-duration">03:02</div>
+                  </div>
+
+                  <!-- volume -->
+                  <div class="slider_container">
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                    <i class="fa fa-volume-up"></i>
+                  </div>
+            </div>
+              </div>
+         </div>
+
+
+      <article class="chatbox">
+        <iframe src="https://www3.cbox.ws/box/?boxid=3540980&boxtag=xdkRsa" width="100%" height="101%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+      </article>
+
+      <article class="etc">
+        <div class="picture">
+        </div>
+        <div class="picturetext" style="margin-left: 10px;">
+          what i like right now...
+        </div>
+        <div class="picturetext2" style="right:20px;">half blood</div>
+      </article>
+
+      <article class="etc2">
+        <div class="picturetext" style="font-size:12px; margin-left: 10px;">
+         sites to follow
+        </div>
+        <div class="marqueemeow2">
+          <a href="https://cosm1cbrownie.neocities.org" target="_blank"><img src="https://i.ibb.co/Hd8kr6X/36491aa.gif"></a>
+          <a href="https://goooby.neocities.org/"><img src="https://i.ibb.co/whJV8BdJ/goobie-button.gif"></a>
+          <a href="https://nyaa.neocities.org"><img src="https://i.ibb.co/9msvrtR8/nyaabanner.gif"></a>
+          <a href="https://jeith.com/"><img src="https://i.ibb.co/6csG7mBX/jeith.gif" alt="jeith"></a>
+          <a href="https://cloverbell.neocities.org/" target=blank><img src="https://i.ibb.co/XxzPHCkp/cloverbell.gif"></a>
+          <a href="https://oceangel.neocities.org/"><img src="https://i.ibb.co/MkJH8HVZ/buttonoceangelneocities.gif"></a> 
+          <a href="https://poemdoll.neocities.org/" target="_blank"><img src="https://i.ibb.co/NrJPCs9/brZ3TDv.png"></a>
+          <a href="https://drizzle.neocities.org"><img src="https://i.ibb.co/Fb56J6BM/mgev80.png"></a>
+          <a href="https://vickkuma.neocities.org/"><img src="https://i.ibb.co/cXLPvHr3/vickybuttononline.gif" style="height:31px;"></a>
+          <a href="https://monsieurdoll.neocities.org" target="_blank"><img src="https://i.imgur.com/j85uDmZ.png"></a>
+          <a href="https://seafare.neocities.org" target="_blank"><img src="https://i.imgur.com/WAFA65o.png"></a>
+          <a href="https://pc98.club"><img src="https://i.ibb.co/xK4dvC9r/button1.gif" alt='PC98.CLUB' title='PC98.CLUB'></a>
+          
+    </div>
+      </article>
+
+    <article class="clearbox">
+      </article>
+
+      <article class="stampbox">
+        <textarea style="margin-left:120px; margin-top:-40px;width:110px; margin-top:8px; color:#64a3cd; border-color: #64a3cd;"><;a href="https://oceanfront.neocities.org/" target="_blank"><img src="https://i.ibb.co/cyXFNgk/button.png"></a></textarea>
+        <img src="photos/webfiles/button.png" style="margin-top:-33px;margin-left:10px;">
+        
+      </article>
+
+      <img src="https://i.ibb.co/tTGrpwTT/tumblr-ad09b74340b7cc1b9fd821094e6f8dc8-df5e9320-500.webp" style="width:230px; margin-left:445px; margin-top:-55px;" alt="">
+
+    </main>
+    <div class="clearfullbody">
+    <img src="photos/webfiles/clearfullbody.png" style="width:150px;z-index:999; margin-left:-555px; margin-top:-345px; position: absolute;">
+    <script src="main.js"></script></div>
+    
+    </body>
+    </html>

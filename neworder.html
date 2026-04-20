@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="neworder.css" />
+    <meta charset="UTF-8">
+    <title>oceanfront</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+    <div class="backgroundone"></div>
+        <img src="headeremo.gif" style="opacity:50%; filter: grayscale(100); margin-left:365px; margin-top:-250px; position: absolute;">
+        <h1 style="margin-left:50px; margin-top:-130px; font-size:100px;">new order</h1>
+
+        <img src="https://nbhap.com/wp-content/uploads//2014/09/New-Order-1980s.jpg" style="width:450px; margin-left:50px; margin-top:-50px; -webkit-mask-image: url(https://i.ibb.co/JjDXBPr/ED5929-CE-1-D66-4-EC4-8-F8-A-14792-D8-F2384.png); -webkit-mask-size: 100%; -webkit-mask-repeat: no-repeat;">
+        <p style="font-size:10px; margin-left:170px; margin-top:-30px;">new order at the paradise garage, NYC, july 1983</p>
+
+    <div class="boxone" style="margin-left:1140px; margin-top:-370px;">
+        <div class="button"><b><p style="margin-top:3px; margin-left:5px;">more info</p><br></div>
+        <div class="button"><p style="margin-top:3px; margin-left:5px;">members</p><br></div>
+        <div class="button"><p style="margin-top:-3px; margin-left:5px;">songs <img src="https://files.catbox.moe/ril1jr.gif"></p><br></div>
+        <div class="button"><p style="margin-top:3px; margin-left:5px;">preformances</p><br></div></b>
+        <img src="https://miro.medium.com/v2/resize:fit:800/0*otv18uIVA6K066u6.jpg" style="width:200px; margin-left:25px; margin-top:50px;  filter: greyscale(100%);
+        filter: drop-shadow(1px 1px 10px grey) drop-shadow(1px 1px 10px rgb(66, 66, 66)); drop-shadow(1px 1px 10px rgb(66, 66, 66));                           
+      ">
+        <p style="font-size:13px; margin-left:70px; margin-top:10px;"><b>idk what to put here...</b></p>
+    </div>
+
+
+    <div class="boxtwo" style="margin-left: 560px; margin-top: -400px;">
+        <h2 style="margin-left:20px;">what is new order?</h2>   
+        <p style="font-family: 'pixeljp'; font-size:12px; margin-left:10px;">new order is an english 'rock' band formed in 1980 by vocalist Bernard Summers. members include stephen morris (drummer), gillian gilbert (keyboard), phil cunningham (guitar), and tom chapman (bass) (but those last two are not rlly important) new order was formed after the disbanding of bernard summer's previous group, joy division. in the 80's most of their popularity was gained from preforming in NYC nightclubs, until their single 'Blue Monday' was released, which would become the <u>best selling 12-inch single of all time.</u></p>
+        <p style="font-family: 'pixeljp'; font-size:12px; margin-left:10px;">nowadays i wouldn't really call new order 'rock'-- they're a mix of so many different genres. the odd club soundtracks of the 80s, mixed with a definite alternate / experimental sound in all of their songs. just listening to one song will give you the idea-- each song is so different from one another, but you know exactly who its from. their melancholy lyrics mixed with an otherworldy sound make them one of my favorite artists.</u></p>
+    </div>
+
+
+            
+             <div id="musicplayer">
+                    
+                    <table class="controls"><script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script> <!-- add this to the head!! --> 
+                        <tr>
+                            <td>
+                                <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward">◁</i></div>
+                            </td>
+                            <td>
+                                <div class="playpause-track" onclick="playpauseTrack()" ><i class="fas fa-play">▶</i></div>
+                            </td>
+                            <td>
+                                <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward">▷</i></div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+             <div>
+                        <marquee scrollamount="8" class="songtitle"></marquee>
+                    </div>
+                    <div class="seeking">
+                        <div class="current-time">00:00</div>
+             
+                        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+             
+                        <div class="total-duration">0:00</div>
+                    </div>
+             <div class="slider_container">
+             
+                  <i class="fa fa-volume-down"></i>
+                  <input type="range" min="0" max="20"
+                    value="10" class="volume_slider" onchange="setVolume()">
+                  <i class="fa fa-volume-up"></i>
+                </div>
+                
+                    <audio id="music" src=""></audio> 
+                </div>
+              <!-- player by adilene.net-->  
+                <script src="musicplayer.js"></script>
+
+                     <div class="boxthree" style="margin-top:20px; margin-left:560px;"></div>
+                     <div class="boxfour" style="margin-top:-125px; margin-left:780px;">
+                        <h2 style="font-size:22px; margin-left:13px;">featured song</h2>
+                        <p style="font-family: 'pixeljp'; font-size:11px; margin-left:35px; ">elegia (1985), <br>from low-life</p>
+                        <div class="youtube">
+                            <iframe loading="lazy" width="140" height="90" style="  filter: greyscale(100%); z-index:99; margin-top: ;" src="https://www.youtube.com/embed/omzJvwYO440?si=Dp2AxJmZmSGa4pZR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                        </div>
+                     </div>
+
+    </body>
+</html>

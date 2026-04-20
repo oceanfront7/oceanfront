@@ -1,0 +1,159 @@
+
+body {
+    background-image: url(https://i.ibb.co/SwBXHgVK/image.png);
+    background-repeat: repeat;
+}
+
+main {
+    width:1000px;
+    height:730px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:2%;
+    align-self: center;
+    background-color: rgb(235, 250, 255);
+    border-radius: 20px;
+    border: 4px dotted #c4e4e6;
+    box-shadow: 0 0 20px 20px rgba(255, 255, 249, 0.6);
+}
+
+ 
+.header {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #A2D5F8;
+      border-radius: 20px;
+      background-image: url(https://oceanfront.neocities.org/photos/webfiles/headerimage.gif);
+      background-size: cover;
+      height: 150px;
+      width: 970px;
+      align-self: center;
+      margin-left: auto;
+      margin-right:auto;
+      margin-top:1.5%;
+      box-shadow: 0 0 8px 8px white inset;
+      box-shadow:rgb(255 255 255) 0px 0px 20px 8px inset, rgba(110, 141, 162, 0.15) 0px 8px 5px 0px;
+  }
+
+
+  .insidebox{
+    width: 100%;
+    height: 27%;
+    border-radius: 20px;
+    background-color: #fffde2;
+    border: 1px solid #c7eaf3;
+    }
+
+.textbox {
+    width: 500px;
+    height:470px;
+    margin-left: 2%;
+    margin-right:;
+    margin-top:3%;
+    background-color: rgb(243, 252, 255);
+    border-radius: 20px;
+    border: 1px solid #9ad6db;
+    overflow: fixed;
+}
+
+    .nav1 {
+    width: 240px;
+    height: 120px;
+    margin-left: 55%;
+    margin-right:;
+    margin-top:-22%;
+    background-color: rgb(243, 252, 255);
+    border-radius: 20px;
+    border: 1px solid #9ad6db;
+    align-items: center;
+    }
+
+    hr {
+        background-image: url(https://watermelon.crd.co/assets/images/gallery16/24025842.gif?v=6332de85);
+        border: 1.2px solid #a7b8f0;
+        display: block;
+    }
+
+    #bubble {
+        font-size: 50px;
+        color: #6599bc;
+       
+    }
+
+    .dropbtn {
+        background-color: #fdffdd;
+        border: 1px solid #A2D5F8;
+        color: rgb(117, 176, 197);
+        padding:10px;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        display:flex;
+        float:left;
+        margin:2px;
+        margin-left:7px;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(6, 83, 114, 0.2);
+        border-radius: 20px;
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: rgb(77, 141, 165);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #f2f6ba;
+      }
+
+      .pin {
+        width: 100px;
+        height:100px;
+        background-image: url();
+        position: absolute;
+        z-index:0;
+      }
+
+      h1 {
+        font-size:16px;
+        color:#5b90bf;
+        font-family: 'bluescreen';
+      }
+
+      p {
+        font-family: 'MsGothic';
+      }
+
+      a {
+        font-family: 'MsGothic';
+        color:#57a8be;
+
+      }
+
+      @font-face {
+        font-family: bluescreen;
+        src: url(fonts/Blue\ Screen.ttf);
+      }
+
+      @font-face {
+        font-family: MsGothic;
+        src: url(fonts/MSGothic.ttf);
+      }
+
+
+

@@ -1,0 +1,376 @@
+<html>
+<link rel="stylesheet" type="text/css" href="aquarium.css" />
+    <head>
+    
+    </head>
+    <body>
+      <script type="text/javascript">
+                                // <![CDATA[
+                                var colours=new Array("#90d2ff", "#90d2ff", "#68c2ff", "#68c2ff", "#d9efff"); // colours for top, right, bottom and left borders and background of bubbles
+                                var bubbles=80; // how many bubbles are moving at any given time
+                                var over_or_under="over"; // set to "over" for bubbles to always be on top, or "under" to allow them to float behind other objects
+                                
+                                /****************************
+                                * JavaScript Bubble Bath *
+                                *(c)2010-13 mf2fm web-design*
+                                * http://www.mf2fm.com/rv *
+                                * DON'T EDIT BELOW THIS BOX *
+                                ****************************/
+                                
+                                var swide=800;
+                                var shigh=600;
+                                var bubb=new Array();
+                                var bubbx=new Array();
+                                var bubby=new Array();
+                                var bubbs=new Array();
+                                var boddie;
+                                var ie_version=(navigator.appVersion.indexOf("MSIE")!=-1)?parseFloat(navigator.appVersion.split("MSIE")[1]):false;
+                                
+                                function addLoadEvent(funky) {
+                                var oldonload=window.onload;
+                                if (typeof(oldonload)!='function') window.onload=funky;
+                                else window.onload=function() {
+                                if (oldonload) oldonload();
+                                funky();
+                                }
+                                }
+                                
+                                addLoadEvent(bubba);
+                                
+                                function bubba() { if (document.getElementById) {
+                                var i, rats, div;
+                                boddie=document.createElement("div");
+                                boddie.style.position="fixed";
+                                boddie.style.top="0px";
+                                boddie.style.left="0px";
+                                boddie.style.overflow="visible";
+                                boddie.style.width="1px";
+                                boddie.style.height="1px";
+                                boddie.style.backgroundColor="transparent";
+                                boddie.style.zIndex="0";
+                                document.body.appendChild(boddie);
+                                set_width();
+                                for (i=0; i<bubbles; i++) {
+                                rats=createDiv("3px", "3px");
+                                
+                                div=createDiv("auto", "auto");
+                                rats.appendChild(div);
+                                div=div.style;
+                                div.top="1px";
+                                div.left="0px";
+                                div.bottom="1px";
+                                div.right="0px";
+                                div.borderLeft="1px solid "+colours[3];
+                                div.borderRight="1px solid "+colours[1];
+                                
+                                div=createDiv("auto", "auto");
+                                rats.appendChild(div);
+                                div=div.style;
+                                div.top="0px";
+                                div.left="1px";
+                                div.right="1px";
+                                div.bottom="0px"
+                                div.borderTop="1px solid "+colours[0];
+                                div.borderBottom="1px solid "+colours[2];
+                                
+                                div=createDiv("auto", "auto");
+                                rats.appendChild(div);
+                                div=div.style;
+                                div.left="1px";
+                                div.right="1px";
+                                div.bottom="1px";
+                                div.top="1px";
+                                div.backgroundColor=colours[4];
+                                if (ie_version && ie_version<10) div.filter="alpha(opacity=50)";
+                                else div.opacity=0.5;
+                                
+                                boddie.appendChild(rats);
+                                bubb[i]=rats.style;
+                                bubb[i].zIndex=(over_or_under=="over")?"1001":"0";
+                                }
+                                bubble();
+                                }}
+                                
+                                function bubble() {
+                                var c;
+                                for (c=0; c<bubbles; c++) if (!bubby[c] && Math.random()<0.333) {
+                                bubb[c].left=(bubbx[c]=Math.floor(swide/6+Math.random()*swide/1.5)-10)+"px";
+                                bubb[c].top=(bubby[c]=shigh)+"px";
+                                bubb[c].width="3px";
+                                bubb[c].height="3px"
+                                bubb[c].visibility="visible";
+                                bubbs[c]=3;
+                                break;
+                                }
+                                for (c=0; c<bubbles; c++) if (bubby[c]) update_bubb(c);
+                                setTimeout("bubble()", 40);
+                                }
+                                
+                                function update_bubb(i) {
+                                if (bubby[i]) {
+                                bubby[i]-=bubbs[i]/2+i%2;
+                                bubbx[i]+=(i%5-2)/5;
+                                if (bubby[i]>0 && bubbx[i]>0 && bubbx[i]<swide) {
+                                if (Math.random()<bubbs[i]/shigh*2 && bubbs[i]++<8) {
+                                bubb[i].width=bubbs[i]+"px";
+                                bubb[i].height=bubbs[i]+"px";
+                                }
+                                bubb[i].top=bubby[i]+"px";
+                                bubb[i].left=bubbx[i]+"px";
+                                }
+                                else {
+                                bubb[i].visibility="hidden";
+                                bubby[i]=0;
+                                return;
+                                }
+                                }
+                                }
+                                
+                                window.onresize=set_width;
+                                function set_width() {
+                                var sw_min=999999;
+                                var sh_min=999999;
+                                if (document.documentElement && document.documentElement.clientWidth) {
+                                if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+                                if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+                                }
+                                if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+                                if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+                                if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+                                }
+                                if (document.body.clientWidth) {
+                                if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+                                if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+                                }
+                                if (sw_min==999999 || sh_min==999999) {
+                                sw_min=800;
+                                sh_min=600;
+                                }
+                                swide=sw_min;
+                                shigh=sh_min;
+                                }
+                                
+                                function createDiv(height, width) {
+                                var div=document.createElement("div");
+                                div.style.position="absolute";
+                                div.style.height=height;
+                                div.style.width=width;
+                                div.style.overflow="hidden";
+                                div.style.backgroundColor="transparent";
+                                return (div);
+                                }
+                                // ]]>
+      </script>
+
+      <script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+      </script>
+                                
+                           
+        <main>
+            <div class="mainbox">
+                <div class="mainbox2">
+                    <div class="truebox">
+                            
+                            <p class="bouncy letterone">A</p><p class="bouncy lettertwo">q</p><p class="bouncy letterthree">u</p><p class="bouncy letterfour">a</p><p class="bouncy letterfive">r</p><p class="bouncy lettersix">i</p><p class="bouncy letterseven">u</p><p class="bouncy lettereight">m</p>
+                            
+                        <hr style="margin-top:-12%;">
+                        
+                        <div class="minibox">
+                            <h2>inspo pictures</h2>
+
+
+
+                            <div class="gallery">
+                            <div class="gallery-item">
+                          
+                              <img src="https://preview.redd.it/3-months-in-v0-j5mxdf9v7hhg1.jpeg?width=5712&format=pjpg&auto=webp&s=f492d2f601f24eec5ca8f33b03097440a377d465" alt="Cinque Terre" width="600" height="400"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></a>
+                              <a  rel="noopener noreferrer" target="_blank" href="https://www.reddit.com/r/Aquascape/comments/1qvep69/3_months_in/"><div class="desc">hardscape by @ParticularFit4596</div></a>
+                                </div>
+
+                            <div class="gallery-item">
+                                <img src="https://preview.redd.it/yf1qd5wo87c61.jpg?width=1080&crop=smart&auto=webp&s=13b2fa81ef672346f7bd1574b4c72d265f98d05c" alt="Forest" width="600" height="400" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></a>
+                              <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Aquascape/comments/l09x2b/added_more_beach_area_and_another_path_what_do/"><div class="desc">beautiful beach by @sithvdv</div></a>
+                               </div>
+
+                            <div class="gallery-item">
+                                <img src="https://preview.redd.it/finally-first-scape-v0-x4l7m7hvkihg1.jpg?width=1080&crop=smart&auto=webp&s=150e25eb2b61f096e1d5cb4d71ecdeba0399ebf5" alt="Northern Lights" width="600" height="400" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"></a>
+                             <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Aquascape/comments/1qvvg6f/finally_first_scape/"> <div class="desc" style="margin-left:-15px;">@CheesecakeExtreme999</div></a>
+                              </div>
+
+                            <div class="gallery-item">
+                                <img src="https://preview.redd.it/my-first-attempt-how-it-started-and-how-its-going-v0-oe2kg4nynrhg1.jpg?width=1080&crop=smart&auto=webp&s=ae182ef285d92773b9040ecaa20b346175451542"  style="margin-bottom:5px" width="600" height="400" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"></a>
+                                <img src="https://preview.redd.it/my-first-attempt-how-it-started-and-how-its-going-v0-7ttyaomynrhg1.jpg?width=1080&crop=smart&auto=webp&s=d1d55fd4b9edb3dc4c5e96528038b09f9eba0295"  width="600" height="400" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"></a>
+                              <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Aquascape/comments/1qx2b80/my_first_attempt_how_it_started_and_how_its_going/"><div class="desc">@Wild_Shroom_</div></a>
+                                </div>
+                            
+                                
+                                <div class="gallery-item" style="margin-top:-100px;">
+                                <img src="https://preview.redd.it/my-5g-starting-to-hit-its-stride-v0-qa9ei1ujlihg1.jpg?width=1080&crop=smart&auto=webp&s=eb7065a1330800a8267ae1ef7823d4a6fa844193"  style="margin-bottom:5px" width="600" height="400" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"></a>
+                                <img src="https://preview.redd.it/my-5g-starting-to-hit-its-stride-v0-5hlphxtjlihg1.jpg?width=1080&crop=smart&auto=webp&s=d7c45291604a051d7b7ccfdea25fdafe144c0ff8"  width="600" height="400" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"></a>
+                             <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Aquascape/comments/1qvv8na/my_5g_starting_to_hit_its_stride/"><div class="desc">gorgeous 5gal by @spoonful_of_you</div></a>
+                                </div>
+                                
+                                <div class="gallery-item">
+                                <img src="https://preview.redd.it/showcasing-my-95-gallon-planted-tank-that-i-spent-the-last-v0-riy89pus2u2g1.jpg?width=1080&crop=smart&auto=webp&s=665fa0f2418116e2378a21e8197ee4b47aa2489a"  style="margin-bottom:5px" width="600" height="400" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                               <a  rel="noopener noreferrer" href="https://www.reddit.com/r/Aquascape/comments/1p3xaru/showcasing_my_95_gallon_planted_tank_that_i_spent/"><div class="desc">95gal by @Dennis_Wong</div></a>
+                                </div>
+
+                                <div class="gallery-item">
+                                <img src="https://i.ibb.co/sdv6bjfP/3490.jpg"  style="margin-bottom:5px" width="600" height="400" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                               <a  rel="noopener noreferrer" href="https://showcase.aquatic-gardeners.org/2015/show349.html"><div class="desc">aquatic garden estuary by soeharto</div></a>
+                                </div>
+
+                                <div class="gallery-item" style="margin-top:-250px;">
+                                <img src="https://i.ibb.co/h1xNrqNP/image.png"  style="margin-bottom:5px" width="600" height="400" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+                                <img src="https://i.ibb.co/n8m8PDYx/image.png"  style="margin-bottom:5px" width="600" height="400" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+                                <img src="https://i.ibb.co/VYFmLGqw/image.png"  style="margin-bottom:5px" width="600" height="400" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+                                <a  rel="noopener noreferrer" href="https://showcase.aquatic-gardeners.org/2015/show341.html"><div class="desc">aquatic garden bridge by kau wan ling</div></a>
+                                </div>
+
+                                <div class="gallery-item">
+                                <img src="https://i.ibb.co/TD32zVWQ/image.png"  style="margin-bottom:5px" width="600" height="400" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+                                <a  rel="noopener noreferrer" href="https://showcase.aquatic-gardeners.org/2008/show62.html"><div class="desc">clouds on the lake by mirko asagi</div></a>
+                                </div>
+
+                            </div>
+
+                            <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 13</div>
+              <img src="https://preview.redd.it/3-months-in-v0-j5mxdf9v7hhg1.jpeg?width=5712&format=pjpg&auto=webp&s=f492d2f601f24eec5ca8f33b03097440a377d465" style="width:100%">
+            </div>
+
+             <div class="mySlides">
+            <div class="numbertext">2 / 13</div>
+               <img src="https://preview.redd.it/yf1qd5wo87c61.jpg?width=1080&crop=smart&auto=webp&s=13b2fa81ef672346f7bd1574b4c72d265f98d05c" style="width:100%">
+              </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 13</div>
+              <img src="https://preview.redd.it/finally-first-scape-v0-x4l7m7hvkihg1.jpg?width=1080&crop=smart&auto=webp&s=150e25eb2b61f096e1d5cb4d71ecdeba0399ebf5" style="width:100%">
+               </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 13</div>
+              <img src="https://preview.redd.it/my-first-attempt-how-it-started-and-how-its-going-v0-oe2kg4nynrhg1.jpg?width=1080&crop=smart&auto=webp&s=ae182ef285d92773b9040ecaa20b346175451542" style="width:100%">
+                 </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">5 / 13</div>
+              <img src="https://preview.redd.it/my-first-attempt-how-it-started-and-how-its-going-v0-7ttyaomynrhg1.jpg?width=1080&crop=smart&auto=webp&s=d1d55fd4b9edb3dc4c5e96528038b09f9eba0295" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 13</div>
+              <img src="https://preview.redd.it/my-5g-starting-to-hit-its-stride-v0-qa9ei1ujlihg1.jpg?width=1080&crop=smart&auto=webp&s=eb7065a1330800a8267ae1ef7823d4a6fa844193" style="width:100%">
+                 </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">7 / 13</div>
+              <img src="https://preview.redd.it/my-5g-starting-to-hit-its-stride-v0-5hlphxtjlihg1.jpg?width=1080&crop=smart&auto=webp&s=d7c45291604a051d7b7ccfdea25fdafe144c0ff8" style="width:100%">
+                 </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">8 / 13</div>
+              <img src="https://preview.redd.it/showcasing-my-95-gallon-planted-tank-that-i-spent-the-last-v0-riy89pus2u2g1.jpg?width=1080&crop=smart&auto=webp&s=665fa0f2418116e2378a21e8197ee4b47aa2489a" style="width:100%">
+                 </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 13</div>
+              <img src="https://i.ibb.co/sdv6bjfP/3490.jpg" style="width:100%">
+                 </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">10 / 13</div>
+              <img src="https://i.ibb.co/h1xNrqNP/image.png" style="width:100%">
+                 </div>
+
+             <div class="mySlides">
+                <div class="numbertext">11 / 13</div>
+              <img src="https://i.ibb.co/n8m8PDYx/image.png" style="width:100%">
+                 </div>
+
+             <div class="mySlides">
+                <div class="numbertext">12 / 13</div>
+              <img src="https://i.ibb.co/VYFmLGqw/image.png" style="width:100%">
+                 </div>
+              
+               <div class="mySlides">
+                <div class="numbertext">13 / 13</div>
+              <img src="https://i.ibb.co/TD32zVWQ/image.png" style="width:100%">
+                 </div>
+          
+                 
+            
+                 <!---
+              <div class="mySlides">
+                <div class="numbertext">0 / 4</div>
+              <img src="" style="width:100%">
+                 </div>
+                 -->
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            </div>
+
+                        </div>
+
+                    
+                         </div>
+                    
+                          <div class="miniboxtwo">
+                             <h2>shopping list</h2>
+                             <li>slate</li>
+                             <li>river rock</li>
+                             <li>manzanita</li>
+                             <li>seiryu stones</li>
+                             <li>wild rhino stone</li>
+                             <li>pothos</li>
+                          </div>
+                        
+         </div>
+         </div>
+
+        </main>
+    </body>
+</html>

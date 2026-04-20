@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>oceanfront</title>
+<link rel="shortcut icon" href="https://oceanfront.neocities.org/photos/webfiles/shell3.gif" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="medialog.css"/>
+</head>
+<body>
+
+	<div class="container">
+
+	      <div class="header">
+          <div id="bubble" style="text-align:center; padding:10px;">media log</div>
+          <script type="text/javascript">
+          // <![CDATA[
+          var bgcolour="#5db0d4"; // background colour
+                var fgcolour="#a3daf0"; // foreground colour
+                var speed=60; // speed of bubbling, lower is faster
+                var shades=12; // number of shades of bubble
+                 
+                /****************************
+                * Bubbling Text Effect *
+                *(c)2003-13 mf2fm web-design*
+                * http://www.mf2fm.com/rv *
+                * DON'T EDIT BELOW THIS BOX *
+                ****************************/
+                var bubbcol=new Array();
+                var bubbshd;
+                var bubbler, bubbtxt;
+                var bubbchr=new Array();
+                 
+                function addLoadEvent(funky) {
+                 var oldonload=window.onload;
+                 if (typeof(oldonload)!='function') window.onload=funky;
+                 else window.onload=function() {
+                 if (oldonload) oldonload();
+                 funky();
+                 }
+                }
+                 
+                addLoadEvent(bubbagump);
+                 
+                function bubbagump() { if (document.getElementById) {
+                 var i, fg, bg, col;
+                 for (bubbler=0; bubbler<=shades; bubbler++) {
+                 col="#";
+                 for (i=1; i<6; i+=2) {
+                 bg=parseInt(bgcolour.substring(i,i+2),16);
+                 fg=parseInt(fgcolour.substring(i,i+2),16);
+                 col+=dechex(bg+(fg-bg)*(bubbler/shades));
+                 }
+                 bubbcol[bubbler+1]=col;
+                 if (bubbler==Math.floor(shades/2)) bubbshd=col;
+                 }
+                 bubbler=document.getElementById("bubble");
+                 bubbtxt=bubbler.firstChild.nodeValue;
+                 while (bubbler.childNodes.length) bubbler.removeChild(bubbler.childNodes[0]);
+                 for (i=0; i<bubbtxt.length; i++) {
+                 fg=document.createElement("span");
+                 fg.setAttribute("id", "bubb"+i);
+                 fg.style.textShadow=bubbshd+" 0px 0px 2px";
+                 fg.appendChild(document.createTextNode(bubbtxt.charAt(i)));
+                 bubbler.appendChild(fg);
+                 }
+                 bubbler=setInterval("bubbling()", speed);
+                }}
+                 
+                function dechex(dec) {
+                 dec=Math.floor(dec);
+                 return ((dec<16)?'0':'')+dec.toString(16);
+                }
+                 
+                function bubbling() {
+                 var i, bubby;
+                 for (i=0; i<bubbtxt.length; i++) {
+                 bubby=document.getElementById("bubb"+i);
+                 if (bubbchr[i]) {
+                 bubby.style.color=bubbcol[bubbchr[i]];
+                 bubbchr[i]=(bubbchr[i]+1)%bubbcol.length;
+                 }
+                 else if (Math.random()<7.5/(shades*bubbtxt.length)) bubbchr[i]=1;
+                 }
+                }
+                // ]]>
+           </script>
+       </div>
+		
+		<div class="small" >
+			<nav>
+				<div><h2>navigation</h2></div>
+				<a href="">link</a>
+				<a>link</a>
+			</nav>
+		
+			<img src="https://i.pinimg.com/474x/bf/77/c7/bf77c7ec07a9cfc9b4a02585cc82d507.jpg" style="height:6.6rem; width:12rem;">
+		</div>
+	
+		<section class="half" style="height:30.2rem;">
+		</section>
+				
+		<section class="small">
+			</section>
+		</div>
+
+
+</body>
+</html>

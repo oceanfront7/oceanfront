@@ -1,0 +1,110 @@
+<head>
+    <meta charset="UTF-8">
+    <title>ari photography</title>
+    <link rel="shortcut icon" href="https://pixels.crd.co/assets/images/gallery24/d246e4c8.gif?v=99d3974e">
+    <link href="artbook.css" rel="stylesheet">
+    <style>
+         #bubble {
+    color:#EBF0FF;
+    font-family:Times;
+    font-size:45px;
+    font-weight:bold;
+    display: inline-block;
+    text-align:center;
+    }
+    </style>
+</head>
+    <body>
+        <a href="https://oceanfront.neocities.org/"> <img src= "https://pixels.crd.co/assets/images/gallery16/8b717079.gif?v=99d3974e"width=35" height="35" margin="auto"></a>
+        <main>
+            <div class="header">
+                <div id="bubble" style="text-align:center; padding:25px;">art book</div>
+                <script type="text/javascript">
+                // <![CDATA[
+                var bgcolour="#b2daeb"; // background colour
+                var fgcolour="#5ab7d1"; // foreground colour
+                var speed=60; // speed of bubbling, lower is faster
+                var shades=12; // number of shades of bubble
+                 
+                /****************************
+                * Bubbling Text Effect *
+                *(c)2003-13 mf2fm web-design*
+                * http://www.mf2fm.com/rv *
+                * DON'T EDIT BELOW THIS BOX *
+                ****************************/
+                var bubbcol=new Array();
+                var bubbshd;
+                var bubbler, bubbtxt;
+                var bubbchr=new Array();
+                 
+                function addLoadEvent(funky) {
+                 var oldonload=window.onload;
+                 if (typeof(oldonload)!='function') window.onload=funky;
+                 else window.onload=function() {
+                 if (oldonload) oldonload();
+                 funky();
+                 }
+                }
+                 
+                addLoadEvent(bubbagump);
+                 
+                function bubbagump() { if (document.getElementById) {
+                 var i, fg, bg, col;
+                 for (bubbler=0; bubbler<=shades; bubbler++) {
+                 col="#";
+                 for (i=1; i<6; i+=2) {
+                 bg=parseInt(bgcolour.substring(i,i+2),16);
+                 fg=parseInt(fgcolour.substring(i,i+2),16);
+                 col+=dechex(bg+(fg-bg)*(bubbler/shades));
+                 }
+                 bubbcol[bubbler+1]=col;
+                 if (bubbler==Math.floor(shades/2)) bubbshd=col;
+                 }
+                 bubbler=document.getElementById("bubble");
+                 bubbtxt=bubbler.firstChild.nodeValue;
+                 while (bubbler.childNodes.length) bubbler.removeChild(bubbler.childNodes[0]);
+                 for (i=0; i<bubbtxt.length; i++) {
+                 fg=document.createElement("span");
+                 fg.setAttribute("id", "bubb"+i);
+                 fg.style.textShadow=bubbshd+" 0px 0px 2px";
+                 fg.appendChild(document.createTextNode(bubbtxt.charAt(i)));
+                 bubbler.appendChild(fg);
+                 }
+                 bubbler=setInterval("bubbling()", speed);
+                }}
+                 
+                function dechex(dec) {
+                 dec=Math.floor(dec);
+                 return ((dec<16)?'0':'')+dec.toString(16);
+                }
+                 
+                function bubbling() {
+                 var i, bubby;
+                 for (i=0; i<bubbtxt.length; i++) {
+                 bubby=document.getElementById("bubb"+i);
+                 if (bubbchr[i]) {
+                 bubby.style.color=bubbcol[bubbchr[i]];
+                 bubbchr[i]=(bubbchr[i]+1)%bubbcol.length;
+                 }
+                 else if (Math.random()<7.5/(shades*bubbtxt.length)) bubbchr[i]=1;
+                 }
+                }
+                // ]]>
+                 </script>
+                 </div>
+             </div>
+            <div class="textbelow">
+                <div style="padding:10px;">all art by me</div>
+            </div>
+                <article class="photo" style="margin-left: auto; margin-right: auto;">
+                <img src="https://amouru.crd.co/assets/images/gallery02/1254b83c.jpg?v=29b3e8dc" style="margin-left: auto; margin-right: auto;" alt="photo"></a> 
+                <img src="https://amouru.crd.co/assets/images/gallery02/9faec0c4_original.jpg?v=29b3e8dc" style="margin-left: auto; margin-right: auto;" alt="photo"></a> 
+            </article>
+
+                </div>
+            </main>
+
+
+</body>
+</html>
+                                                                        

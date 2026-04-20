@@ -1,0 +1,252 @@
+<html>
+<meta charset="UTF-8">
+<title>oceanfront</title>
+<link rel="shortcut icon" href="https://pixels.crd.co/assets/images/gallery24/18259812.gif" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="about.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+<style>
+   #bubble {
+    color:#355f7b;
+    font-family:Times;
+    font-size:45px;
+    font-weight:bold;
+    display: inline-block;
+    text-align:center;
+    }
+</style>
+    
+    </head>
+    <body>
+        
+       <main>
+            
+            <article class="mainbox">
+                
+                <div class="header">
+                    <div id="bubble" style="text-align:center; padding:10px;">all about me</div>
+                    <script type="text/javascript">
+                    // <![CDATA[
+                    var bgcolour="#438db5"; // background colour
+                          var fgcolour="#5db0d4"; // foreground colour
+                          var speed=60; // speed of bubbling, lower is faster
+                          var shades=12; // number of shades of bubble
+                           
+                          /****************************
+                          * Bubbling Text Effect *
+                          *(c)2003-13 mf2fm web-design*
+                          * http://www.mf2fm.com/rv *
+                          * DON'T EDIT BELOW THIS BOX *
+                          ****************************/
+                          var bubbcol=new Array();
+                          var bubbshd;
+                          var bubbler, bubbtxt;
+                          var bubbchr=new Array();
+                           
+                          function addLoadEvent(funky) {
+                           var oldonload=window.onload;
+                           if (typeof(oldonload)!='function') window.onload=funky;
+                           else window.onload=function() {
+                           if (oldonload) oldonload();
+                           funky();
+                           }
+                          }
+                           
+                          addLoadEvent(bubbagump);
+                           
+                          function bubbagump() { if (document.getElementById) {
+                           var i, fg, bg, col;
+                           for (bubbler=0; bubbler<=shades; bubbler++) {
+                           col="#";
+                           for (i=1; i<6; i+=2) {
+                           bg=parseInt(bgcolour.substring(i,i+2),16);
+                           fg=parseInt(fgcolour.substring(i,i+2),16);
+                           col+=dechex(bg+(fg-bg)*(bubbler/shades));
+                           }
+                           bubbcol[bubbler+1]=col;
+                           if (bubbler==Math.floor(shades/2)) bubbshd=col;
+                           }
+                           bubbler=document.getElementById("bubble");
+                           bubbtxt=bubbler.firstChild.nodeValue;
+                           while (bubbler.childNodes.length) bubbler.removeChild(bubbler.childNodes[0]);
+                           for (i=0; i<bubbtxt.length; i++) {
+                           fg=document.createElement("span");
+                           fg.setAttribute("id", "bubb"+i);
+                           fg.style.textShadow=bubbshd+" 0px 0px 2px";
+                           fg.appendChild(document.createTextNode(bubbtxt.charAt(i)));
+                           bubbler.appendChild(fg);
+                           }
+                           bubbler=setInterval("bubbling()", speed);
+                          }}
+                           
+                          function dechex(dec) {
+                           dec=Math.floor(dec);
+                           return ((dec<16)?'0':'')+dec.toString(16);
+                          }
+                           
+                          function bubbling() {
+                           var i, bubby;
+                           for (i=0; i<bubbtxt.length; i++) {
+                           bubby=document.getElementById("bubb"+i);
+                           if (bubbchr[i]) {
+                           bubby.style.color=bubbcol[bubbchr[i]];
+                           bubbchr[i]=(bubbchr[i]+1)%bubbcol.length;
+                           }
+                           else if (Math.random()<7.5/(shades*bubbtxt.length)) bubbchr[i]=1;
+                           }
+                          }
+                          // ]]>
+                     </script>
+                 </div>
+                
+            <article class="hitcount">
+               
+              <div class="inner" style="text-align: center;">
+            </div>
+        <div id="counterbox">
+        </article>
+        
+     
+        <article class="profilepic">
+            <img src="https://i.ibb.co/VwJbs7Z/download.png" alt="image"  height="280px" align-items: center; width="280px">
+        </article>
+
+        <article class="buttons">
+          <b> <p style="margin-top: 12px;">my birthday:</p></b>
+          <p style="margin-left: 135px; margin-top: -35px; font-family: 'patrickhand';"><i>november 13th</i></p>
+        </article>
+
+        <article class="buttons" style="margin-top: 15px;">
+       <b> <p style="margin-top: 12px; color:6586b6;">favorite color:</p></b>
+        <p style="margin-left: 135px; margin-top: -35px;font-family: 'patrickhand';"><i>blue and purple</i></p>
+        </article>
+
+        <article class="buttons" style="margin-top: 15px;">
+            <b><p style="margin-top: 12px; color:6586b6;">favorite animal:</p></b>
+        <p style="margin-left: 135px; margin-top: -43px;font-family: 'patrickhand';"><i>penguins, pandas & butterflies</i></p>
+        </article>
+
+        <article class="buttons" style="margin-top: 15px;">
+            <b><p style="margin-top: 12px; color:6586b6;">day of the week:</p></b>
+        <p style="margin-left: 135px; margin-top: -35px;font-family: 'patrickhand';"><i>thursday</i></p>
+        </article>
+
+        <article class="buttons" style="margin-top: 15px;">
+            <b><p style="margin-top: 12px; color:6586b6;">favorite mascot:</p></b>
+            <p style="margin-left: 135px; margin-top: -35px;font-family: 'patrickhand';"><i>cinnamoroll</i></p>
+        </article>
+
+        <article class="aboutme">
+            <div class="picturetext" style="font-size: 40px; margin-left: 45px; margin-top: -14px;">
+                about me
+            </div>
+            <p style="margin-top: -15px; text-align: center;"> my name is ari! i made this site because i love having the creative freedom to say and write whatever i'd like
+                on a site. i love penguins, cinnamoroll, playing games every 6 months, and journaling every single day. im a high
+                school senior now. i hope you like my page >.<
+            </p>
+        </article>
+
+
+        <article class="favoritecharacter">
+            <div class="inside">
+                
+            <img id="image" src="https://i.ibb.co/XDQKpNV/imageedit-10-9543590963.png" alt="image"  margin-left="20px" margin-top="30px" height="100px" width="100px" overflow="hidden">
+            <script src="about.js"></script>
+        </div>
+        </article>
+
+        <article class="favoritethings">
+            <iframe src="why.html" alt="image" margin-left="20px" margin-top="30px" frameBorder="0"></iframe>
+        </div>
+        </article>    
+        <div class="picturetext" style="margin-left: 570px; margin-top: -140px;">
+            characters
+          </div>
+
+          <div class="picturetext" style="margin-left: 720px; margin-top: -15px;">
+            things
+          </div>
+
+          <article class="ilike">
+            <p>i like: penguins, pandas, butterflies, thunderstorms, hatsune miku, sunsets and sunrises, matcha, and matcha ice cream, chocolate, sour candy, taro flavors (but not in mochi), the persona series, walking, purple, blue, pink and black, ice skating, some nice blue hues, cinnamoroll, blogging / old websites, buying clothes, 
+                crunchies, water/the ocean, flowers, dark clouds, tea, smell of oil paint, my black sweatshirt, genshin impact, the smell of air and the moon at night, vanilla sandalwood candle, venti, battle athletes victory, dramatical murder & style, bright vivid colors, rosary beads, the word mitigation, code geass, candy, kpop girl groups (sometimes)</p>
+        </article>
+        
+        <div id="floatingchat">
+            <img src="https://i.ibb.co/RPjN323/Untitled-Artwork-9.png" style="float:right;width:160px;height:160px;margin-right:800px;animation-name:hover;animation-duration:10s;animation-iteration-count:infinite;">
+          </div> 
+        <article class="hobbies">
+
+            <div class="picturetext" style="font-size: 20px; margin-left: 10px; margin-top: 5px;">
+                my hobbies
+            </div>
+            <img src="https://i.pinimg.com/736x/c5/c1/e7/c5c1e7613a1012e1346e058b461a38a7.jpg" style="float:right; width:100px; margin-right:15px;margin-top: -15px;">
+            <p style="margin-top:-5px;">looking at pretty pictures, baking, coding, painting, studying, penpalling, playing minecraft, writing, reading</p>
+        </div>
+        </article>
+
+        <img src="https://i.ibb.co/bW1hwy9/download.png" style="height:190px; width: 190px; margin-left:693px;margin-top:-355px;">
+        <img src="https://i.ibb.co/sQy9YgN/collage.png" style="    filter: sepia(0.1%) hue-rotate() grayscale(0%); position:relative; z-index:999; height:270px; width: 170px; margin-left:59%; margin-top:-25%; rotate: 10deg; position:static; z-index:999;">
+   
+   
+        <div class="albumbox">
+        <img src="https://i.ibb.co/3Rt5qHr/624db3760f69e9f920ed61db79871f8d.webp" style="width: 50px; margin-top: 0px; margin-left:10px;">
+        <img src="https://i.ibb.co/ngjyGh4/a04226d2aa136b657581be21c7f1a568.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/gjZXDGx/a6402bd935da8e2263b6fcd7becb5211.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/RvrZPXL/d122f95ec52c1fb75b843d09e45d28bf.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/42pV5Ks/f7804e070e4f0e7e4fc89716f12200aa.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/7Cn3wYS/01ee4aa3cba2ebd13a8b008dc89dea56.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/fD6P3NQ/5cd50ce2bb6f968c42678b631e746a41.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/xH0fZb6/7c5b6689da45943b6b5ed8ccbfc8cd5e.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/ZWTbmBs/8b5ec08bdcfc0de6759f5791582a2f8a.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/wYycM9b/32a51da6fd63d367f90d237a496837f5.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/vXsZzfw/35e9dd032502458bb3dd420ae907f2da.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/qCgt6Sq/84b0fa0ac8911414452e395945ce45a8.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/BntZ92D/70506ef8a3d8452deb82b1ee26fdc706.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/6BZBKC6/a5205f2711b10f1ac4cfae64082c42b5.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/HFC3HBK/a9147e811ed015df0ffe528862c41bd1.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/f9frKz5/b78de330c51d06d31d2237a121d467e1.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/fFDtwys/b00527c6ae0cd1d4c9bf3706b130ad56.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/6rS01zb/c92c1a8a43906ce3365f1ccb58a37258.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/hgXjLKj/e55d7faf7a4ade3222808cf5d743c0e2.webp" style="width: 50px; margin-top: 0px;margin-left:8px;">
+        <img src="https://i.ibb.co/y8LdGTt/6d1a70cf9978269790953bfbd54479b7-571x571x1.jpg" style="width: 50px; margin-top: 0px;">
+        <img src="https://i.ibb.co/0q3Bp1s/51-HI-Eh-P38-L-UF1000-1000-QL80.jpg" style="width: 50px; margin-top: 0px;">
+        <img src="https://i.ibb.co/PWGxHVn/ab67616d0000b2731a9d769789da8f9b49962c9d.jpg" style="width: 50px; margin-top: 0px;">
+        <img src="https://i.ibb.co/99rjY1p/bb1df509819e8a3e7b661bb01d53b458.webp" style="width: 50px; margin-top: 0px;">
+        <img src="https://i.ibb.co/0rZ20cV/c08115859ff54f19646a4a2e110a5860.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/s64mBrB/cb0dab49b1cdda76d0f2fd580d714099.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/XVMW5Y4/d7f5e7c6ae196d85a8c97c19129c82c9.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/CBTfBwp/e6c54d1d008fefd5c6ac8337a55cbca3.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/3fhmmS8/e79d872d3f72dc8705a484fdc540a91b.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/HPJTg41/Persona4-OSTCover.webp" style="width: 50px; margin-top: 0px; ">
+        <img src=" https://i.ibb.co/7p3c0Rq/cd70bc2d4e15d37211318f38a2248f46.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/8Pcx2L7/9026bfc9c331abf4c70691735102f969.webp" style="width: 50px; margin-top: 0px; ">
+        <img src=" https://i.ibb.co/XJW0hgr/8fad81a6c8b245c8c5645d73102d44d4.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/vDSD3JB/507c3f4c1863a05626a445057871b56e.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/dBpBX3j/4a345ef05690bfd9cfaaabb796f2e478.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/zZjLsgx/01462fe4877c37f1dd997c03e51bf901.webp" style="width: 50px; margin-top: 0px; ">
+        <img src="https://i.ibb.co/1mkMKhj/0289791176207c34780dad335a320dd5.webp" style="width: 50px; margin-top: 0px; ">
+    </div>    
+
+        <article class="music">
+            
+        </article>
+ <div class="youtube">
+    <iframe loading="lazy" width="160" height="110" style="    filter: sepia(95%) hue-rotate(180deg) grayscale(0%); 3px solid #A2D5F8; margin-left:650px; margin-top:-150px;" src="https://www.youtube.com/embed/71ZHVmSuBJM?si=SCnT4RXDP-mTAV9X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</div>
+
+        <div class="picturetext" style="font-size: 40px; margin-left: 640px; margin-top: -325px;">
+            music
+        </div>
+
+
+    </article>
+
+
+ 
+ <!--- <div id="cinnamonphone">
+        <img src="https://pix.crd.co/assets/images/gallery16/2a586edc.gif?v=bae75af9" style="margin-left: 325px; z-index: 999; width:100px; height:100px; margin-top: -375px; filter: hue-rotate(290deg);">
+    </div> --->
+</main>
+    </body>
+    </html>

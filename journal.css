@@ -1,0 +1,198 @@
+
+@font-face {
+    src: url("Winkle-Regular.ttf"); 
+     format("truetype");
+    font-family: "winkle";
+    }
+@font-face {
+    src: url("nokiafc22.ttf"); 
+     format("truetype");
+    font-family: "nokia";
+    }
+
+
+::-webkit-scrollbar-thumb {
+
+
+}
+body {
+  background-color:#c5dff2;
+  background-size:cover;
+     background-repeat: no-repeat;
+  background-attachment: fixed;
+color: #a2806c;
+font-size:20.5px;
+background-image: url("https://i.pinimg.com/736x/7d/b5/0c/7db50c7f47c2f95c216f1800ccd53919.jpg");
+background-blend-mode: normal;
+background-size: 70px;
+background-size: cover;
+}
+
+a:link {
+  color: #6ca0ca;
+    text-decoration: none;
+}
+ 
+ 
+a:visited { 
+  color: #6ca0ca;
+}
+ 
+ 
+a:hover {
+  color: #567eba; 
+}
+ 
+ 
+a:active {
+  color: #6ca0ca ;
+
+}
+ ::selection {
+background-color: #c2f4ff;
+
+}
+
+hr {
+  background-image:url(https://watermelon.crd.co/assets/images/gallery16/24025842.gif?v=6332de85);
+  border: 1.2px solid #a7b8f0;
+  display: block;
+}
+html {
+cursor: url(n_n/korilakkumacursor.png), auto;
+
+}
+.container {
+       background-image:url(https://i.ibb.co/svX8bCDV/6985c764a06557a7a04fa8a7d6c9ca51-removebg-preview-1.png);
+   
+       background-repeat: no-repeat;
+           background-size: 100% 100%;
+
+      position:absolute;
+    margin-left: 0 auto;
+    width: 1180px;
+    height:740px;
+    left: 50%;
+top: 50%;
+transform: translate(-50%, -51%);
+}
+
+.magoseal {
+  background-image:url(https://i.pinimg.com/564x/6d/c3/9a/6dc39a636ecf899afe46aa1014397f86.jpg);
+background-size:cover;
+ position:absolute;
+ position:absolute;
+margin-left: 0 auto;
+width: 500px;
+height:550px;
+right: 28%;
+top: 53.5%;
+border-radius:2%;
+transform: translate(-50%, -55%);
+border: 2px solid;
+border-top-color: #76cde3;
+border-left-color: #76cde3;
+border-right-color: #66acd1;
+border-bottom-color: #66acd1;
+}
+
+.diary {
+  position: absolute;
+  margin-left: 0 auto;
+    width: 445px;
+    height:380px;
+    left: 120px;
+bottom: 250px;
+overflow: fixed;
+}
+
+.inside {
+      position:absolute;
+    width: 405px;
+    height:280px;
+    background-color:white;
+    right: 10%;
+top: 13%;
+border-radius:2%;
+padding:10px;
+overflow: scroll;
+border-width: 5px;
+border-style: solid;
+border-color:#ffb8c9;
+font-size: 12px;
+font-family: 'nokia';
+border-top-color: #76cde3;
+border-left-color: #76cde3;
+border-right-color: #66acd1;
+border-bottom-color: #66acd1;
+}
+
+.inside2 {
+  position:absolute;
+width: 205px;
+height:205px;
+background-color:white;
+right: 27%;
+top: 56%;
+border-radius:2%;
+padding:10px;
+overflow: scroll;
+border-width: 5px;
+border-style: solid;
+border-top-color: #76cde3;
+border-left-color: #76cde3;
+border-right-color: #66acd1;
+border-bottom-color: #66acd1;
+}
+
+.chatbox {
+    position:absolute;
+  width: 160px;
+  height:205px;
+  background-color:white;
+  right: 10%;
+  top: 56%;
+  border-radius:2%;
+  padding:10px;
+  overflow: scroll;
+  border-width: 5px;
+  border-style: solid;
+  border-top-color: #76cde3;
+  border-left-color: #76cde3;
+  border-right-color: #66acd1;
+  border-bottom-color: #66acd1;
+  }
+  
+  .status {
+    width:0px; 
+    margin-left:69%; 
+    margin-top:21%;
+    background-color: #000;
+  }
+
+.header{
+  background-color:white;  
+  border: 2px solid #a7b8f0;
+  border-radius: 10px; 
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: auto;
+  text-align:middle;
+  margin: auto;
+ width: 100%;
+ color: #948fc8;
+ font-family: 'winkle';
+} 
+
+.month {
+  font-family: 'nokia';
+  border-radius: 20px;
+  margin-left: 5px;
+  color: #6cb1ca;
+  margin-top: 15px;
+  line-height: 20px;
+  text-align: left;
+  font-size: 12px;
+  overflow: auto;
+}
