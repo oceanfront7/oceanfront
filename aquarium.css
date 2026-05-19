@@ -1,7 +1,6 @@
 
 body {
     background-image: url(https://images.pexels.com/photos/920163/pexels-photo-920163.jpeg?cs=srgb&dl=pexels-ekamelev-920163.jpg&fm=jpg);
-    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -9,12 +8,12 @@ body {
     background-color: #6c8ec0;
     border: 2px dotted #174d69;
     padding: 10px;
-      width: 70%;
-      height: 70%;
+     height:600px;
+     width:1000px;
       margin-right: auto;
     margin-left: auto;
     border-radius: 25px;
-    margin-top: 7%;
+    margin-top:80px;
     box-shadow: 0 0 25px 15px rgba(101, 139, 188, 0.8);
    }
 
@@ -89,7 +88,7 @@ body {
 
    .bouncy {
     font-family: hawaiilover;
-    color:#4d6b99;
+    color: #87aef2;
     margin-top:-20px;
     font-size:6em;
     animation: bounce 2s infinite;

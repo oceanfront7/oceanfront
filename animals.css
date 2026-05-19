@@ -1,0 +1,116 @@
+
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+    background-size: 65px;
+    color: #999999;
+    cursor: url(cursor.cur), auto;
+    background-image: url('https://oceanfront.neocities.org/photos/webfiles/Background02.gif');
+    }
+    
+    element-class:pointer {
+        cursor: url(jellyfish.cur), pointer;
+      }
+    
+    #container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    main {
+        background-color: #FFFFFF;
+        border-radius: 25px;
+        border: 1.5px dashed #A2D5F8;
+        padding: 20px;
+        filter: drop-shadow(5px 0px 0px #ffffff) drop-shadow(0px 5px 0px #ffffff) drop-shadow(-5px 0px 0px #ffffff) drop-shadow(0px -5px 0px #ffffff);
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    span {
+        text-align: center;
+      }
+
+    
+    *::-webkit-scrollbar {
+        width: 5px;
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: #81afc8;
+        border-radius: 10px;
+        border: 1px solid #79868f;
+    }
+    *::-webkit-scrollbar-track {
+        background: #7287ae;
+    }
+
+    #container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+
+.mainbox {
+    display: inline-block;
+    float: ;
+    <!--try display/flex--!>
+     width: 35rem;
+     height: 250px;
+     background-color: #FFFFFF;
+     border: 1.5px dashed #A2D5F8;
+     margin-top: 15px;
+     border-radius: 9px;
+   }
+
+
+ .gohome {
+
+    text-align: center;
+    margin: auto;
+  display: block;
+  display: flex;
+  justify-content: center;
+ }
+
+ .pictures {
+text-align:center;
+margin: auto;
+justify-content: center;
+overflow: auto;
+ }
+
+ @font-face {
+    src: url("MSGothic.ttf"); 
+     format("truetype");
+    font-family: "MSGothic";
+    }
+    
+     @font-face {
+    src: url("Winkle-Regular.ttf"); 
+     format("truetype");
+    font-family: "winkle";
+    }
+
+
+    h2 {
+    font-family: 'winkle';
+    color:#88b8d6;
+    align-items: center;
+    }
+
+
+    h1 {
+        color:#9fc2e3;
+         font-family: 'bluescreen';
+         border-radius: 15px;
+         font-size: 30px;
+     }
+    
+     .gohome {
+    
+        text-align: center;
+        margin: auto;
+      display: block;
+      display: flex;
+      justify-content: center;
+    
+     }
