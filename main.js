@@ -22,12 +22,6 @@ let curr_track = document.createElement('audio');
 // Define the tracks that have to be played
 let track_list = [
   {
-    name: "LOVE DOLL",
-    artist: "DECO*27",
-    image: "https://i.ibb.co/SXBPMxBz/0x1900-000000-80-0-0.jpg",
-    path:"https://dl.dropbox.com/scl/fi/wuvf2xf7id43sa6ompji3/LOVEDOLL.mp3?rlkey=uqi6synqecwgxz2u1x8awtl9m&st=d1fbmgs3&dl=0"
-  },
-  {
     name: "360",
     artist: "charli xcx",
     image: "https://i.ibb.co/p25yJcP/172688890271200983.png",
@@ -38,9 +32,20 @@ let track_list = [
     artist: "dramatical murder",
     image: "https://i.ibb.co/27XLHRsC/17686144835521318.png",
     path: "https://dl.dropbox.com/scl/fi/qzubetlcln72h6xjeo4zg/DRAMAtical-Murder-OST-Track-6.mp3?rlkey=yg67kgge5dqavv5shb3cu2ska&st=lj9u6lbo&dl=0"
-
-
   },
+  {
+    name: "LOVE DOLL",
+    artist: "DECO*27",
+    image: "https://i.ibb.co/SXBPMxBz/0x1900-000000-80-0-0.jpg",
+    path:"https://dl.dropbox.com/scl/fi/wuvf2xf7id43sa6ompji3/LOVEDOLL.mp3?rlkey=uqi6synqecwgxz2u1x8awtl9m&st=d1fbmgs3&dl=0"
+  },
+  {
+    name: "SHINee World",
+    artist: "SHINee",
+    image: "https://i.ibb.co/V0WSCFLL/imageedit-4-5582368606.jpg",
+    path:"https://dl.dropbox.com/scl/fi/11tdr6ez2uv3us9vbofv7/The-SHINee-World-Doo-Bop.mp3?rlkey=uhugxwgxfjngnm0x8w0pqwi19&st=b7i5l0tq&dl=0"
+  },
+  
     
 ];
 
@@ -63,7 +68,7 @@ function loadTrack(track_index) {
 
 function resetValues() {
   curr_time.textContent = "0:00";
-  total_duration.textContent = "3:02";
+  total_duration.textContent = "2:13";
   seek_slider.value = 0;
 }
 
@@ -78,13 +83,13 @@ function playpauseTrack() {
 function playTrack() {
   curr_track.play();
   isPlaying = true;
-  playpause_btn.innerHTML = '<img src="https://i.ibb.co/r2JYMJJg/Font-Awesome-5-regular-pause-circle-svg.png" style= width="20px" height="20px">';
+  playpause_btn.innerHTML = '<img src="https://i.ibb.co/fd6KmcfK/image-1.png" style= width="20px" height="20px">';
 }
 
 function pauseTrack() {
   curr_track.pause();
   isPlaying = false;
-  playpause_btn.innerHTML = '<img src="https://i.ibb.co/dwnY9W3S/Font-Awesome-5-solid-play-circle-svg.png" style= width="20px" height="20px">';;
+  playpause_btn.innerHTML = '<img src="https://i.ibb.co/bgPnSq4S/image-2.png" style= width="20px" height="20px">';;
 }
 
 function nextTrack() {

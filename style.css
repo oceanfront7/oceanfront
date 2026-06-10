@@ -15,7 +15,7 @@
  }
 
  body {
-  font-family: 'Basiic', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #FFFFFF;
   background-size: 65px;
@@ -85,7 +85,7 @@
   width: 150px;
   height: 60px;
   border: 1px solid #A2D5F8;
-  background: #ffffff
+  background: #ffffff;
   box-shadow: inset #b0e0f4 0 0 5px;
   overflow: hidden;
   border-radius: 5px;
@@ -163,7 +163,7 @@
   height: 5rem;
   width: 5rem;
   margin-top: 1px;
-  background-image: url(https://i.ibb.co/y3Jnfwr/imageedit-1-4719371721.jpg);
+  background-image: url(https://i.ibb.co/V0WSCFLL/imageedit-4-5582368606.jpg);
   background-color: #ffffff;
   color: #ffffff;
   background-size: cover;
@@ -229,9 +229,10 @@ padding:3px;
   height: 150px;
       border-radius: 9px;
       margin-right:5px;
-      font-family: 'MsGothic';
+      font-family: Arial, Helvetica, sans-serif;
   }
-  
+
+
   #cllocck {
   background-color: #ffffff;
   border-radius: 0.2px;
@@ -299,26 +300,52 @@ padding:3px;
   height: 32px;
   background-image: url(photos/webfiles/umbrellaheader.gif);
   background-repeat: no-repeat;
-  margin-bottom: -25;
+  margin-top:0px;
 }
 
-#statuscafe {
-  padding: 2em;
-  top: -20px;
-  font-family: 'MsGothic';
-}
-#statuscafe-username {
-  margin-bottom: .5em;
-}
-#statuscafe-content {
-  margin: 0 1em 0.5em 1em;
-}
+
 
 .clearfullbody {
  text-align: center;
  align-items:center;
 }
 
+#todobox {
+    right:35px;
+    bottom: -220px;
+    z-index: 999;
+    width:200px;
+    height:250px;
+    position: fixed;
+    overflow:scroll;
+    scrollbar-width: none;
+    overflow-x:hidden;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1.5px dashed #95cbef;
+    box-shadow: 0px 0px 0px 1.5px  #ffffff;
+    background-color: #fff;
+}
+
+#todobox:hover {
+    bottom: 0px;
+}
+    
+#title {
+    width: 240px;
+    height: 15px;
+    margin-left:-20px;
+    margin-top:4px;
+    font-family: 'bluescreen';
+    color: #81acd1;
+    text-align: center;
+    font-size: 18px;
+}
 
 /***************** animation information, marquee *****************/
 
@@ -331,19 +358,20 @@ a:hover{
 }
 
 .marqueemeow {
-  animation: marqmoving 15s linear;
+  animation: marqmoving 15s linear infinite;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom:-15px;
   padding:3px;
   flex-wrap: nowrap;
-  transform: translate(183px, -1px);
+  transform: translate(185px, -1px);
   animation-iteration-count: infinite;
 }
 
+
 .marqueemeow2 {
-  animation: marqmoving 13s linear;
+  animation: stampmove 13s linear;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -354,12 +382,21 @@ a:hover{
   animation-iteration-count: infinite;
 }
 
-@keyframes marqmoving {
+@keyframes stampmove {
   0% {
     transform: translate(183px, -1px);
 }
 100% {
     transform: translate(-1440px, -1px);
+}
+}
+
+@keyframes marqmoving {
+  0% {
+    transform: translate(183px, -1px);
+}
+100% {
+    transform: translate(-2000px, -1px);
 }
 }
 
@@ -548,7 +585,6 @@ i.fas:hover{
 h1 {
        background-image: url(photos/webfiles/oceanheaderimage.gif);
        color: #9fc2e3;
-        background-color: #eed9f2;
         font-family: "bluescreen";
         border-radius: 15px;
         font-size: 30px;
@@ -569,13 +605,8 @@ h2 {
 
 
 p {
-    color:#64a3cd;
-    letter-spacing: 0.5;
-    font-size: 15px;
-  line-height: 1.9;
-  margin-left: 5px;
-  font-family: "bluescreen";
-  padding:3px;
+  color: #81afc8;
+  font-size:10px; 
 }
 
 a:link {
