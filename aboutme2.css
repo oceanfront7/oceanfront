@@ -1,0 +1,81 @@
+
+    body {
+    font-family: 'Basiic', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    background-size: 65px;
+    color: #999999;
+    cursor: url(cursor.cur), auto;
+    background-image: url(https://oceanfront.neocities.org/photos/webfiles/Background02.gif);
+    }
+    
+    .mainbox {
+    background-color: #FFFFFF;
+    border: 1.5px dashed #A2D5F8;
+    width: 900px;
+    height: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+   }
+
+   /*****************  ****************/
+   /*****************  ****************/
+
+   .boxxybox {
+    height:222px;
+    width:222px;
+    background-image: url(https://i.ibb.co/5gfVkNsv/image-1.png);
+   }
+
+    .profilepic {
+    background-color: #ffffff;
+    border-width:8px;
+    border-style:solid;
+    border-image: url("https://dl.dropbox.com/s/v8iy6a8feyq041p/blue%20ver.png") 8 fill round;                         
+    box-shadow: inset #b0e0f4 0 0 5px;
+    width: 14rem;
+    align-items: center;
+    height: 14rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 2;
+    color:#81afc8;
+   }
+
+     #floatingchat {
+    z-index: 100;
+    margin-top: -200px;
+    margin-right:-10px;
+    animation-name: hover;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes hover {
+    0%, 100% {
+      transform: translateY(-10px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(3deg);
+  }
+  }
+
+/*****************  ****************/
+/*****************  ****************/
+    .aboutmetext {
+    border: 1.5px dotted #A2D5F8;
+    border: 3px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(purple, grey);   
+    width:235px;
+    height:390px;
+    margin-left: 20px;
+    margin-top:220px;
+    background-image: url(https://i.pinimg.com/736x/94/3b/c8/943bc8a3b800bf5b2a667ba24e75c265.jpg);
+    background-size: cover;
+    overflow:auto;
+
+    }
