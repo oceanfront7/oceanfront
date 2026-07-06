@@ -39,7 +39,7 @@
     width: 14rem;
     align-items: center;
     height: 14rem;
-    margin-top: 20px;
+    margin-top: -350px;
     margin-left: 20px;
     line-height: 2;
     color:#81afc8;
@@ -47,12 +47,66 @@
 
      #floatingchat {
     z-index: 100;
-    margin-top: -200px;
+    margin-top: -220px;
     margin-right:-10px;
     animation-name: hover;
     animation-duration: 10s;
     animation-iteration-count: infinite;
   }
+
+   /*****************  ****************/
+   /*****************  ****************/
+  
+[id^="grid-"] {
+    max-width: 400px;
+    margin-left:505px;
+}
+
+.imagecard {
+    width: 50px;
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 100px;
+    filter: sepia(90%) hue-rotate(180deg) grayscale(0%) brightness(90%);
+}
+
+ .imagecard:hover {
+    -webkit-filter: none !important;
+    filter: none !important;
+}
+
+
+.imagegrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+
+.imageinfobottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 7px;
+  background-color: #7baed0aa;
+  color: #ffffff;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s ease, visibility 1s;
+}
+
+.imagecard:hover .imageinfobottom {
+  opacity: 1;
+  visibility: visible;
+}
+
 
   @keyframes hover {
     0%, 100% {
@@ -66,16 +120,16 @@
 /*****************  ****************/
 /*****************  ****************/
     .aboutmetext {
-    border: 1.5px dotted #A2D5F8;
-    border: 3px;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(purple, grey);   
+    border: 2px dotted #A2D5F8;
     width:235px;
-    height:390px;
+    height:330px;
     margin-left: 20px;
-    margin-top:220px;
+    margin-top:180px;
     background-image: url(https://i.pinimg.com/736x/94/3b/c8/943bc8a3b800bf5b2a667ba24e75c265.jpg);
     background-size: cover;
     overflow:auto;
 
     }
+
+/*****************  ****************/
+/*****************  ****************/
