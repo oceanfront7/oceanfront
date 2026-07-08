@@ -4,7 +4,6 @@
     margin: 0;
     background-color: #FFFFFF;
     background-size: 65px;
-    color: #999999;
     cursor: url(cursor.cur), auto;
     background-image: url(https://oceanfront.neocities.org/photos/webfiles/Background02.gif);
     }
@@ -39,7 +38,7 @@
     width: 14rem;
     align-items: center;
     height: 14rem;
-    margin-top: -350px;
+    margin-top: -365px;
     margin-left: 20px;
     line-height: 2;
     color:#81afc8;
@@ -54,12 +53,26 @@
     animation-iteration-count: infinite;
   }
 
-   /*****************  ****************/
-   /*****************  ****************/
+      .aboutmetext {
+    border: 2px dotted #A2D5F8;
+    width:235px;
+    height:330px;
+    margin-left: 20px;
+    margin-top:-170px;
+    background-image: url(https://i.pinimg.com/736x/94/3b/c8/943bc8a3b800bf5b2a667ba24e75c265.jpg);
+    background-size: cover;
+    overflow:auto;
+
+    }
+
+    /*****************  ****************/
+    /*****************  ****************/
   
 [id^="grid-"] {
-    max-width: 400px;
-    margin-left:505px;
+    max-width: 324px;
+    margin-left:540px;
+    border: 2px dashed #b0e0f4;
+    
 }
 
 .imagecard {
@@ -68,7 +81,7 @@
     overflow: hidden;
     position: relative;
     flex: 0 0 100px;
-    filter: sepia(90%) hue-rotate(180deg) grayscale(0%) brightness(90%);
+    filter: sepia(80%) hue-rotate(180deg) grayscale(0%) brightness(100%);
 }
 
  .imagecard:hover {
@@ -82,7 +95,6 @@
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 16px;
-  justify-content: center;
 }
 
 
@@ -107,6 +119,9 @@
   visibility: visible;
 }
 
+    /*****************  ****************/
+    /*****************  ****************/
+
 
   @keyframes hover {
     0%, 100% {
@@ -117,19 +132,29 @@
   }
   }
 
-/*****************  ****************/
-/*****************  ****************/
-    .aboutmetext {
-    border: 2px dotted #A2D5F8;
-    width:235px;
-    height:330px;
-    margin-left: 20px;
-    margin-top:180px;
-    background-image: url(https://i.pinimg.com/736x/94/3b/c8/943bc8a3b800bf5b2a667ba24e75c265.jpg);
-    background-size: cover;
-    overflow:auto;
-
+    /*****************  ****************/
+    /*****************  ****************/
+    p {
+    color: #337aa0;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 3px;
+    margin-right: 15px;
+    margin-top: 20px;
     }
 
-/*****************  ****************/
-/*****************  ****************/
+    td {
+    color: #337aa0;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 3px;
+    margin-right: 15px;
+    margin-top: 20px;
+    }
+
+
+
+    /*****************  ****************/
+    /*****************  ****************/
