@@ -1,0 +1,133 @@
+<html>
+<meta charset="UTF-8">
+<title>travel blog</title>
+<link rel="shortcut icon" href="https://i.ibb.co/tpbvjftr/plane4.gif" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="travel2.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="insidebox">
+            <div class="header">
+                <div id="bubble" style="text-align:center; padding:10px; margin-left:-35%; margin-top:20px; font-family: 'bluescreen';">oceanfront's travel blog</div>
+                <script type="text/javascript">
+                // <![CDATA[
+                var bgcolour="#6599bc"; // background colour
+                      var fgcolour="#d4feff"; // foreground colour
+                      var speed=60; // speed of bubbling, lower is faster
+                      var shades=12; // number of shades of bubble
+                       
+                      /****************************
+                      * Bubbling Text Effect *
+                      *(c)2003-13 mf2fm web-design*
+                      * http://www.mf2fm.com/rv *
+                      * DON'T EDIT BELOW THIS BOX *
+                      ****************************/
+                      var bubbcol=new Array();
+                      var bubbshd;
+                      var bubbler, bubbtxt;
+                      var bubbchr=new Array();
+                       
+                      function addLoadEvent(funky) {
+                       var oldonload=window.onload;
+                       if (typeof(oldonload)!='function') window.onload=funky;
+                       else window.onload=function() {
+                       if (oldonload) oldonload();
+                       funky();
+                       }
+                      }
+                       
+                      addLoadEvent(bubbagump);
+                       
+                      function bubbagump() { if (document.getElementById) {
+                       var i, fg, bg, col;
+                       for (bubbler=0; bubbler<=shades; bubbler++) {
+                       col="#";
+                       for (i=1; i<6; i+=2) {
+                       bg=parseInt(bgcolour.substring(i,i+2),16);
+                       fg=parseInt(fgcolour.substring(i,i+2),16);
+                       col+=dechex(bg+(fg-bg)*(bubbler/shades));
+                       }
+                       bubbcol[bubbler+1]=col;
+                       if (bubbler==Math.floor(shades/2)) bubbshd=col;
+                       }
+                       bubbler=document.getElementById("bubble");
+                       bubbtxt=bubbler.firstChild.nodeValue;
+                       while (bubbler.childNodes.length) bubbler.removeChild(bubbler.childNodes[0]);
+                       for (i=0; i<bubbtxt.length; i++) {
+                       fg=document.createElement("span");
+                       fg.setAttribute("id", "bubb"+i);
+                       fg.style.textShadow=bubbshd+" 0px 0px 2px";
+                       fg.appendChild(document.createTextNode(bubbtxt.charAt(i)));
+                       bubbler.appendChild(fg);
+                       }
+                       bubbler=setInterval("bubbling()", speed);
+                      }}
+                       
+                      function dechex(dec) {
+                       dec=Math.floor(dec);
+                       return ((dec<16)?'0':'')+dec.toString(16);
+                      }
+                       
+                      function bubbling() {
+                       var i, bubby;
+                       for (i=0; i<bubbtxt.length; i++) {
+                       bubby=document.getElementById("bubb"+i);
+                       if (bubbchr[i]) {
+                       bubby.style.color=bubbcol[bubbchr[i]];
+                       bubbchr[i]=(bubbchr[i]+1)%bubbcol.length;
+                       }
+                       else if (Math.random()<7.5/(shades*bubbtxt.length)) bubbchr[i]=1;
+                       }
+                      }
+                      // ]]>
+                 </script>
+            </div>
+         </div>
+
+         
+         <img src="https://i.ibb.co/8LQSgzPL/istockphoto-1093514566-612x612-removebg-preview.png" style="width:400px; margin-left:560px; margin-top:20px;">
+    <div class="textbox">
+        <iframe src="https://oceanfront.neocities.org/travel-entry/intro" name="page" width="500" height="505" position="absolute" style="border:none; rel="noreferrer noopener" target="_blank"></iframe>
+            </div>
+    
+    <div class="infobox">
+    <h1>places i've been</h1>
+    <br>
+
+     <table>
+      <thead>
+            <tr>
+          <th><h1>north america</h1></th>
+          <th><h1 style="margin-left:40px;">asia</h1></th>
+
+            </tr>
+                 </thead>
+              <tbody>
+            <tr>
+          <td><li>washington, dc</li>
+        <li>cape cod, massachussetts</li>
+        <li><a href="https://oceanfront.neocities.org/travel-entry/2026.07/202607" target="page">new york, new york</a></li>
+        <li>raleigh, north carolina</li>
+        <li>orlando, florida</li>
+        <li><a href="https://oceanfront.neocities.org/travel-entry/2025.03/202503" target="page">seattle, washington</a></li>
+        <li>los angeles, california</li></td>
+
+         <td><li style="margin-right:60px; margin-left:40px; margin-top:-80px;">uttarakhand & <br>delhi, india</li></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>       
+
+  
+</main>
+</body>
+
+</html>

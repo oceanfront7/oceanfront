@@ -1,0 +1,140 @@
+
+body {
+    background-image: url(https://i.ibb.co/SwBXHgVK/image.png);
+    background-repeat: repeat;
+}
+
+main {
+    width:1000px;
+    height:730px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:2%;
+    align-self: center;
+    background-color: rgb(235, 250, 255);
+    border-radius: 20px;
+    border: 4px dotted #c4e4e6;
+    box-shadow: 0 0 20px 20px rgba(255, 255, 249, 0.6);
+}
+
+    ::-webkit-scrollbar {
+         width: 8px; 
+         background: transparent
+         border: 0px  
+         height: 200px;
+         }
+         
+
+    ::-webkit-scrollbar-thumb {
+         background: #fffae4;
+         }
+
+          ::selection {
+         background-color: #c2f4ff;
+         
+         }
+
+ 
+.header {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #A2D5F8;
+      border-radius: 20px;
+      background-image: url(https://oceanfront.neocities.org/photos/webfiles/headerimage.gif);
+      background-size: cover;
+      height: 120px;
+      width: 970px;
+      align-self: center;
+      margin-left: auto;
+      margin-right:auto;
+      margin-top:1.5%;
+      box-shadow: 0 0 8px 8px white inset;
+      box-shadow:rgb(255 255 255) 0px 0px 20px 8px inset, rgba(110, 141, 162, 0.15) 0px 8px 5px 0px;
+  }
+
+
+  .insidebox{
+    width: 100%;
+    height: 22%;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #fffde2;
+    border: 1px solid #c7eaf3;
+    }
+
+.textbox {
+    width: 500px;
+    height:510px;
+    margin-left: 2%;
+    margin-right:;
+    margin-top:-220px;
+    background-color: rgb(243, 252, 255);
+    border-radius: 20px;
+    border: 1px solid #9ad6db;
+}
+
+    .infobox {
+    width: 420px;
+    height:260px;
+    margin-left: 550px;
+    margin-right:;
+    margin-top: -280px;
+    border-radius: 20px;
+    }
+
+
+    hr {
+        background-image: url(https://watermelon.crd.co/assets/images/gallery16/24025842.gif?v=6332de85);
+        border: 1.2px solid #a7b8f0;
+        display: block;
+    }
+
+    th {
+    text-align:left;
+    }
+
+    #bubble {
+        font-size: 50px;
+        color: #6599bc;
+       
+    }
+
+
+      h1 {
+        font-size:16px;
+        color:#5b90bf;
+        font-family: 'bluescreen';
+      }
+
+      p {
+        font-family: 'MsGothic';
+         color: #6f829a;
+        font-size:14px;
+        line-height: 1.6;
+      }
+
+      li {
+        font-family: 'MsGothic';
+         color: #6f829a;
+        font-size:14px;
+        line-height: 1.6;
+
+      }
+
+      a {
+        font-family: 'MsGothic';
+        color:#57a8be;
+
+      }
+
+      @font-face {
+        font-family: bluescreen;
+        src: url(fonts/BlueScreen.ttf);
+      }
+
+      @font-face {
+        font-family: MsGothic;
+        src: url(fonts/MSGothic.ttf);
+      }
+
+
+
