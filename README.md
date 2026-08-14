@@ -22,7 +22,7 @@ screenshots of site:
 ![alt text](https://i.ibb.co/HD71CQN3/Screenshot-2026-08-14-at-1-23-26-PM.png "main page")
 
 # photobook
-![alt text](https://i.ibb.co/4w5XTHw6/Screenshot-2026-08-14-at-1-24-24-PM.png "photobook")
+![alt text](https://i.ibb.co/1f6RkPz4/Screenshot-2026-08-14-at-1-29-54-PM.png "photobook")
 
 # games page
 ![alt text](https://i.ibb.co/tTQDkYzF/Screenshot-2026-08-14-at-1-24-33-PM.png "games page")
