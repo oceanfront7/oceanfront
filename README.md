@@ -16,6 +16,9 @@ A: it's just meant for you to browse and look around!
 FAQ: not every file from your website is uploaded here. why?
 A: i chose not to upload every file that's hosted on my site as some of them are a bit personal (like journal pages), but these can easily be accessed by viewing https://oceanfront.neocities.org/. i didn't upload photos that are linked to my photobook as they are HUGE and would really clog my github!
 
+FAQ: did you use ai?
+A: NO. there is NO ai on my site and there never, ever, ever will be.
+
 tech-stack: visual studio code and neocities in-browser site editor
 types of files: html (90%+), css (~5-10%), js (~1%)
 
