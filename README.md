@@ -19,9 +19,12 @@ A: i chose not to upload every file that's hosted on my site as some of them are
 tech-stack: visual studio code and neocities in-browser site editor
 types of files: html (90%+), css (~5-10%), js (~1%)
 
-folders:
+# folders:
+
 archive: 1.0 versions of certain pages, or pages i no longer 'use' or have public on my site. for example, travel.html was replaced by the new and improved travel2.html.
+
 graphics: all the pages of different graphic pages i have (dividers, backgrounds, pixels, etc.)
+
 photos/webfiles: webfiles is mainly images i have directly uploaded to my site files. most of the files in this folder are for the index.html.
 
 screenshots of site:
