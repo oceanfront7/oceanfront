@@ -2,11 +2,18 @@
 
     body {
     background-color: rgb(243, 249, 255);
+    display:flex;
     background-image: url(https://i.pinimg.com/736x/d0/e6/c8/d0e6c8b0e3972a03c61c8733543eac6b.jpg);
     background-size:cover;
     }
 
- /*** i took some inspiration from https://kkul.store/media, kkul's media page for the sidebar. thank you~ **/
+     * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+
+    /*** i took some inspiration from https://kkul.store/media, kkul's media page for the sidebar. thank you~ **/
     .sidebar {
     z-index: 10000;
     width: 200px;
@@ -30,19 +37,43 @@
 
     .main {
     width: 72%;
-    height: 800px;
+    height: 100vh;
     background-color: #cbf2ff;
     border: 3px solid #fff;
     border-top: 0px;
     border-bottom: 0px;
     margin-left:300px;
-    overflow:hidden;
+    overflow-x: hidden;
     }
 
     .innersidebar {
     width:200px;
+    height: 100%;
+    overflow:scroll;
+    padding:15px;
+    background-color:#f4feff;
+    }
+
+    .innerinnersidebar {
+    width:150px;
     height:100%;
-    background-color:#f84141;
+    margin-left:7px;
+    }
+
+    .textblock {
+    width:725px;
+    height:100%;
+    margin-left:260px;
+    margin-top:-800px;
+    overflow:scroll;
+    padding:20px;
+    background-color:#f4feff;
+    background: linear-gradient(180deg,rgb(248, 254, 255) 0%, rgba(219, 246, 255, 1) 150%);
+    }
+
+    #time {
+    color:#94d2e9;
+    font-family: 'Times New Roman', Times, serif;
     }
 
  /*********************** TEXT ***********************/
@@ -53,28 +84,55 @@
     color: white;
     }
 
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        }
+    ul {
+    margin-top: 0px;
+    list-style-type: none;
+    padding: 10px;
+    margin-bottom: 0px;
+    overflow-y: scroll;
+    }
 
-        ::-webkit-scrollbar {
-            width: 5px;
-          }
-          
-          
-          /* Handle */
-          ::-webkit-scrollbar-thumb {
-            background: rgb(158, 210, 253);
-            background: linear-gradient(0deg, rgb(144, 198, 242) 0%, rgb(241, 212, 206) 100%);
-          }
-          
-          /* Handle on hover */
-          ::-webkit-scrollbar-thumb:hover {
-            background: #94bbe9;
-          }
+    li {
+    color: rgb(52, 141, 189);
+    font-family: zen maru gothic;
+    font-size: 14px;
+    border-bottom: 1px dashed #31729e;
+    margin-bottom: 15px;
+    font-weight: 600;
+    }
 
+    hr {
+    border: 0.5px solid #6eb2dd;
+    }
+    /*
+    ::-webkit-scrollbar {
+    width: 4px;
+    }    
+          
+    ::-webkit-scrollbar-thumb {
+    background: rgb(158, 210, 253);
+    background: linear-gradient(0deg, rgb(144, 198, 242) 0%, rgb(241, 212, 206) 100%);
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #94c7e9;
+    }
+    */
+
+            /*SCROLLBAR*/
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(0deg, rgb(194, 227, 255) 0%, rgb(251, 235, 233) 100%);
+  border-radius: px;
+  border: 2px solid #9fc4dc99;
+  
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #9dcdeb99;
+}
 
     a:link {
         color: #1f5d8c;
@@ -86,7 +144,7 @@
 
     a:hover{
         font-style: italic;
-        color: rgb(189, 175, 219);
+        color: rgb(162, 224, 231);
     }
     
     p{
