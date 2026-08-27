@@ -51,6 +51,7 @@
     height: 100%;
     overflow:scroll;
     padding:15px;
+    position:fixed;
     background-color:#f4feff;
     }
 
@@ -62,10 +63,9 @@
 
     .textblock {
     width:725px;
+    position:fixed;
     height:100%;
     margin-left:260px;
-    margin-top:-800px;
-    overflow:scroll;
     padding:20px;
     background-color:#f4feff;
     background: linear-gradient(180deg,rgb(248, 254, 255) 0%, rgba(219, 246, 255, 1) 150%);
@@ -75,6 +75,22 @@
     color:#94d2e9;
     font-family: 'Times New Roman', Times, serif;
     }
+
+    input::before {
+      content: "";
+      width: 0.35em;
+      height: 0.35em;
+      transform: scale(0);
+      transition: 120ms transform ease-in-out;
+      box-shadow: inset 1em 1em var(--black);
+    }
+
+    input:checked::before {
+      transform: scale(1);
+    }
+
+    
+
 
  /*********************** TEXT ***********************/
 
@@ -162,33 +178,30 @@
     font-family: 'romance';
     color:#94d2e9;
     }
-    
-    h2{
-    }
   
 /*********************** FONTS ***********************/
 
     @font-face {
         src: url("fonts/MSGothic.ttf"); 
-         format("truetype");
+         format:("truetype");
         font-family: "MSGothic";
         }
       
         @font-face {
             src: url("fonts/BlueScreen.ttf"); 
-             format("truetype");
+             format:("truetype");
             font-family: "bluescreen";
             }
 
                 @font-face {
                     src: url("fonts/PatrickHand-Regular.ttf"); 
-                     format("truetype");
+                     format:("truetype");
                     font-family: "patrickhand";
                     }
                 
                 @font-face {
                     src: url("fonts/RomanceA.ttf"); 
-                     format("truetype");
+                     format:("truetype");
                     font-family: "romance";
                     }
 
