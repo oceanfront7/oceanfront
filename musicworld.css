@@ -13,11 +13,9 @@
       width:850px;
       margin-left:20%;
       margin-right:auto;
-      margin-top:25px;
+      margin-top:60px;
       border: #93a3b5 1.5px solid;
       background-color: rgb(248, 252, 255);
-      position:absolute;
-      z-index: 999;
     }
 
     .imagebox {
@@ -40,14 +38,27 @@
       overflow:auto;
     }
 
+    .concerttextbox {
+      height:440px;
+      width:580px;
+      margin-left:20px;
+      margin-top:27px;
+      background-color: rgb(248, 252, 255);
+      box-shadow: 0px 0px 10px 5px #aecad9;
+      border:#93a3b5 1.5px solid;
+      overflow:auto;
+      background-image:url(https://i.ibb.co/DPRjxKPc/7db50c7f47c2f95c216f1800ccd53919.jpg);
+    }
+
     .post {
-      width:90%;
+      width:85%;
       margin-left:auto;
       margin-right:auto;
       margin-bottom: 10px;
       margin-top: 10px;
       background: white;
-      border-image-outset: -35px; 
+      border-image-outset: -35px;
+      border: dashed #99c0e7 2px;
     }
 
     img .post {
@@ -62,26 +73,25 @@
     }
 
     .tooltip {
-  position: relative;
-  display: inline-block;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
 
-  cursor: pointer;
-}
-
-.tooltiptext {
-  visibility: hidden;
-  width: 50px;
-  margin-top:-10px;
-  margin-left:6px;
-  background-color: rgba(255, 255, 255, 0.511);
-  border: 1.5px dashed #549ebb;
-  color: #30506f;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px;
-  font-size:12px;
-  z-index: 1;
-}
+    .tooltiptext {
+      visibility: hidden;
+      width: 50px;
+      margin-top:-10px;
+      margin-left:6px;
+      background-color: rgba(255, 255, 255, 0.511);
+      border: 1.5px dashed #549ebb;
+      color: #30506f;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px;
+      font-size:12px;
+      z-index: 1;
+    }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
@@ -146,14 +156,139 @@
       padding: 6px 12px;
     } 
 
-    .hue-change {
-      filter: hue-rotate(200deg);
-    }
-
     details > summary {
     list-style: none;
     font-family: 'winkle';
     }
+
+     #musicplayer{ 
+          font-family: 'basiic';
+          font-weight:bold;
+          height:30px;
+          width:100%;
+          left:0;
+          top:0;
+          position:fixed;
+          margin-bottom:20px;  
+          display:flex;
+          background: linear-gradient(180deg,rgb(156, 222, 250) 0%, white 45%, rgb(89, 168, 210) 47%, white 100%);
+         border:ridge 2px white; /* border around player */
+          outline: solid 2px #99c0e7;
+         box-shadow: inset 10px 0px 6px -10px #5daee8, inset -13px 0px 6px -10px #5daee8, inset 0px 10px 6px -10px #ffffff, inset 0px -13px 6px -10px white;
+            }
+         
+            .songtitle{ 
+            display:block;
+            padding:2px; /* padding around song title */
+            font-family: 'pixel';
+            margin-top:4px;
+            margin-right: 5px; 
+            font-size:15px;
+            color:#3b4d6f99;
+            letter-spacing: 1px; 
+        
+            background: white;/* background of song title */
+            border: #5daee8 inset 1px;
+               border-radius:6px;
+               box-shadow: inset 13px 0px 6px -10px rgb(66 66 66 / 20%), inset -13px 0px 6px -10px rgb(66 66 66 / 56%), inset 0px 13px 6px -10px #ffffff, inset 0px -13px 6px -10px rgb(66 66 66 / 38%);
+            }
+         
+            .controls{
+              font-size:12px; /* size of controls */
+              text-align:center;
+              width:100px;
+              height:20px;
+              text-decortation:none;
+              color: rgb(53, 143, 195);
+              filter: drop-shadow(2px 0 0 white) drop-shadow(0 2px 0 white) drop-shadow(-2px 0 0 white) drop-shadow(0 -2px 0 white)  drop-shadow(-0.5px 0.5px 0 #3d7ba8) drop-shadow(0 0.5px 0 #3d7ba8) drop-shadow(0 0.5px 0 #3d7ba8) drop-shadow(0 0.5px 0.5px #3d7ba8) drop-shadow(0 0.5px #3d7ba8) drop-shadow(0.5px 0.5px 0 #3d7ba8) drop-shadow(0.5px 0.5px 0 #3d7ba8);
+            }
+         
+            .controls td{
+               padding-top:5px; /* padding around controls */
+            }
+         
+            .seeking{
+              width:75%;
+              background: transparent;/* background color of seeking bar */
+              display:flex;
+              justify-content: space-evenly;
+              padding:7px; /* padding around seeking bar */
+               
+            }
+         
+            .current-time{  
+              padding-right:5px;
+              margin-right: 3px;
+              color: rgb(53, 143, 195);
+             filter: drop-shadow(2px 0 0 white) drop-shadow(0 2px 0 white) drop-shadow(-2px 0 0 white) drop-shadow(0 -2px 0 white)  drop-shadow(-0.5px 0.5px 0 #3d7ba8) drop-shadow(0 0.5px 0 #3d7ba8) drop-shadow(0 0.5px 0 #3d7ba8) drop-shadow(0 0.5px 0.5px #3d7ba8) drop-shadow(0 0.5px #3d7ba8) drop-shadow(0.5px 0.5px 0 #3d7ba8) drop-shadow(0.5px 0.5px 0 #3d7ba8);
+               
+            }
+         
+            .total-duration{
+              padding-left:5px;
+              color: rgb(53, 143, 195);
+              filter: drop-shadow(2px 0 0 white) drop-shadow(0 2px 0 white) drop-shadow(-2px 0 0 white) drop-shadow(0 -2px 0 white)  drop-shadow(-0.5px 0.5px 0 #3d7ba8) drop-shadow(0 0.5px 0 #3d7ba8) drop-shadow(0 0.5px 0 #3d7ba8) drop-shadow(0 0.5px 0.5px #3d7ba8) drop-shadow(0 0.5px #3d7ba8) drop-shadow(0.5px 0.5px 0 #3d7ba8) drop-shadow(0.5px 0.5px 0 #3d7ba8);
+            }
+         
+           .ctrlimg {
+   height:16px;
+   width:16px;
+   }
+    .ctrlimg:hover{
+        cursor:help;
+    }
+            
+            input[type=range] {
+                -webkit-appearance: none;
+                width: 100%;
+              background: transparent;
+            }
+            
+            input[type=range]:focus {
+                outline: none;
+            }
+            
+            input[type=range]::-webkit-slider-runnable-track {
+                width: 100%;
+                height: 6px; /* thickness of seeking track */
+                cursor: help;
+                border-radius: 6px;
+                background: rgb(53, 143, 195); /* color of seeking track */
+                border: 1px white solid;
+            }
+        
+            input[type=range]::-webkit-slider-thumb {
+              
+                height: 30px; /* height of seeking square */
+                width: 20px; /* width of seeking square */
+                background-image:  url('https://file.garden/Zztv0a9yEhr5pmEq/tumblr_40786d3985453eb5412348aad980ac51_3a9a1088_1280%20(1).gif'); /* image of  seeking square */
+                background-size: 25px;
+                -webkit-appearance: none;
+                margin-top: -10px;
+                
+            }
+            
+        input[type=range].volume_slider::-webkit-slider-runnable-track { 
+            background: white; /* color of volume seeking track */
+             filter:drop-shadow(-0.5px 0.5px 0 black) drop-shadow(0 0.5px 0 black) drop-shadow(0 0.5px 0 black) drop-shadow(0 0.5px 0.5px black) drop-shadow(0 0.5px black) drop-shadow(0.5px 0.5px 0 black) drop-shadow(0.5px 0.5px 0 black);  /* outline of volume seeking track */ 
+            }
+            
+         input[type=range].volume_slider::-webkit-slider-thumb {
+            background-image: url(https://file.garden/Zztv0a9yEhr5pmEq/798d7d72_original.png);/* image of volume seeking square */
+            background-size: 20px;
+            height: 20px; /* height of volume seeking square */
+            width: 20px; 
+            margin-top: -8px;
+           }
+         
+         
+        .slider_container {  
+          width: 15%;       /* width of volume seeker */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }    
+        
 
   /****************** TEXT *****************/
 
@@ -195,8 +330,6 @@
         line-height: 110%;
         font-family: "angelicwar";
         font-size: 50px;
-        text-decoration-line: underline;
-        text-decoration-thickness: 1px;
         text-underline-offset: 5px;
       }
 
