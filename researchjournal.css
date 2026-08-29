@@ -51,7 +51,6 @@
     height: 100%;
     overflow:scroll;
     padding:15px;
-    position:fixed;
     background-color:#f4feff;
     }
 
@@ -63,7 +62,8 @@
 
     .textblock {
     width:725px;
-    position:fixed;
+    position:static;
+    margin-top:-800px;
     height:100%;
     margin-left:260px;
     padding:20px;
