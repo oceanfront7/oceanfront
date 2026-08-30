@@ -1,69 +1,46 @@
-    
-    
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
       background-color: #FFFFFF;
-      cursor: url(https://oceanfront.neocities.org/cursor.cur), auto;
-      background-image: url(https://oceanfront.neocities.org/photos/webfiles/Background02.gif);
+      background-size: 65px;
+      background-image: url('https://oceanfront.neocities.org/photos/webfiles/Background02.gif');
+    }
+    
+    #container {
+        max-width: 900px;
+        margin: 0 auto;
     }
 
-    .main {
-      height:750px;
-      width:850px;
-      margin: 0 auto;
-      margin-bottom:30px;
-      margin-top:60px;
-      padding:0;
-      border: #93a3b5 1.5px solid;
-      background-color: rgb(248, 252, 255);
+    main {
+        height:650px;
+        width:820px;
+        padding: 20px;
+        background-color: rgb(248, 252, 255);
+        border: #93a3b5 1.5px solid;
+        margin-top: 70px;
+        margin-bottom: 50px;
     }
 
     .imagebox {
-      width: 95%;
-      height:9%;
-      margin-left:2.5%;
-      margin-top:-8%;
-      background-image:url(https://i.ibb.co/60kKLYNW/imageedit-6-3111101826.jpg);
+      width: 770px;
+      height:70px;
+      margin-left:20px;
+      margin-top:-70px;
+      margin-bottom:20px;
+      background-image:url(photos/webfiles/musicworldborder.jpg);
     }
 
     .hometextbox {
-      height:440px;
-      width:580px;
-      margin-left:225px;
+      height:400px;
+      width:560px;
+      margin-left:235px;
       margin-right:auto;
-      margin-top:-304px;
+      margin-top:-285px;
       background-color: rgb(248, 252, 255);
       box-shadow: 0px 0px 10px 5px #aecad9;
       border:#93a3b5 1.5px solid;
       overflow:auto;
-    }
-
-    .concerttextbox {
-      height:440px;
-      width:580px;
-      margin-left:20px;
-      margin-top:27px;
-      background-color: rgb(248, 252, 255);
-      box-shadow: 0px 0px 10px 5px #aecad9;
-      border:#93a3b5 1.5px solid;
-      overflow:auto;
-      background-image:url(https://i.ibb.co/DPRjxKPc/7db50c7f47c2f95c216f1800ccd53919.jpg);
-    }
-
-    .post {
-      width:85%;
-      margin-left:auto;
-      margin-right:auto;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      background: white;
-      border-image-outset: -35px;
-      border: dashed #99c0e7 2px;
-    }
-
-    img .post {
-      max-width:150px; 
     }
 
     .textcolumn {
@@ -72,31 +49,6 @@
       width:290px;
       font-size:15px;
     }
-
-    .tooltip {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-    }
-
-    .tooltiptext {
-      visibility: hidden;
-      width: 50px;
-      margin-top:-10px;
-      margin-left:6px;
-      background-color: rgba(255, 255, 255, 0.511);
-      border: 1.5px dashed #549ebb;
-      color: #30506f;
-      text-align: center;
-      border-radius: 6px;
-      padding: 8px;
-      font-size:12px;
-      z-index: 1;
-    }
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
 
   /****************** BUTTONS *****************/
 
@@ -129,22 +81,40 @@
       background-color: #f3fcff;
       transition-duration: 0.4s;
     }
-     
-    .tabcontent {
-      display: none;
-      padding: 6px 12px;
-    }
 
-
-  /****************** MISC *****************/
+  /****************** MISC *************************/
     
-    element-class:pointer {
-      cursor: url(https://oceanfront.neocities.org/jellyfish.cur), pointer;
+    hr {
+        border:0.8px #b8c8d7 solid;
+        width:860px;
+        margin-left:-20px;
+      }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
     }
 
-    span {
+    .tooltiptext {
+      visibility: hidden;
+      width: 50px;
+      margin-top:-10px;
+      margin-left:6px;
+      background-color: rgba(255, 255, 255, 0.511);
+      border: 1.5px dashed #549ebb;
+      color: #30506f;
       text-align: center;
+      border-radius: 6px;
+      padding: 8px;
+      font-size:12px;
+      z-index: 1;
     }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+
     *::-webkit-scrollbar {
       width: 5px;
     }
@@ -294,26 +264,21 @@
       justify-content: center;
       align-items: center;
     }    
-        
-
+  
   /****************** TEXT *****************/
-
-      hr {
-        border:0.8px #b8c8d7 solid;
-      }
 
       a:hover{ 
         cursor:url(https://i.ibb.co/6JL8wR4/download-2.gif), url(https://i.ibb.co/6JL8wR4/download-2.gif), auto;   
       }
 
-      h1 {
-        color:#9fc2e3;
-        font-family: "angelicwar";
-        border-radius: 15px;
-        font-size: 90px;
-        letter-spacing: 5px;
-        filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 1px 0px #00000032);
-      }
+    h1 {
+      color:#9fc2e3;
+      font-family: "hawaiikiller";
+      border-radius: 15px;
+      font-size: 90px;
+      letter-spacing: 5px;
+      filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 1px 0px #00000032);
+    }
     
       h2 {
         color: #ffffff;
@@ -351,7 +316,7 @@
       p {
         color: #3b4d6f99;
       }
-
+      
       a:link {
         color: #81afc8;
       }
@@ -386,14 +351,10 @@
       box-shadow: 0px 0px 20px 10px #48abe0;
       }
     }
-  
-@font-face {
-  src: url("MSGothic.ttf"); 
-   format:("truetype");
-  font-family: "MSGothic";
-  }
 
-  @font-face {
+  /****************** FONTS ************************/
+
+    @font-face {
       src: url("fonts/BlueScreen.ttf"); 
        format:("truetype");
       font-family: "bluescreen";
@@ -402,7 +363,7 @@
     @font-face {
       src: url("fonts/Hawaii\ Killer\ \(v1.2\).otf"); 
        format:("truetype");
-      font-family: "angelicwar";
+      font-family: "hawaiikiller";
       }
 
      @font-face {
@@ -410,3 +371,4 @@
        format:("truetype");
       font-family: "romance";
       }
+
