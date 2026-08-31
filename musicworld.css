@@ -92,6 +92,7 @@
       border-image:url(https://64.media.tumblr.com/6f0c2efb2b0902a5907c60c9d1dcad9e/9b9e0ed89a039867-11/s75x75_c1/90da82e9674eafbcc1f84f71303f353726a700b5.pnj) 8 fill round;
     }
 
+
   /****************** BUTTONS *****************/
 
     button {
@@ -209,7 +210,7 @@
   /****************** MUSIC PLAYER *****************/
 
     #musicplayer{ 
-      font-family: 'basiic';
+      font-family: Arial, Helvetica, sans-serif;
       font-weight:bold;
       height:30px;
       width:100%;
@@ -226,8 +227,8 @@
     }
          
     .songtitle{ 
-      font-family:Arial, Helvetica, sans-serif;
-      font-weight: 500;
+      font-family:'Times New Roman', Times, serif;
+      font-weight: 600;
       display:block;
       padding:2px; /* padding around song title */
       margin-top:4px;
@@ -324,7 +325,7 @@
     }
             
     input[type=range].volume_slider::-webkit-slider-thumb {
-      background-image: url(https://i.ibb.co/0RM5mBpq/276.gif);/* image of volume seeking square */
+      background-image: url(https://i.ibb.co/dJcWgZ65/tumblr-383480b278d8fa7ffb3fb99ef6c0252c-b6aced8e-75.webp);/* image of volume seeking square */
       background-size: 20px;
       height: 20px; /* height of volume seeking square */
       width: 20px; 
@@ -390,6 +391,12 @@
         color: #3b4d6f99;
       }
 
+      span {
+        color:#48abe0;
+        font-family: 'zen maru gothic';
+        font-weight: 500;
+      }
+
       a:link {
         color: #81afc8;
       }
@@ -404,6 +411,11 @@
 
       a:active {
         color: #81afc8;
+      }
+
+      ::selection {
+        color: rgb(47, 101, 131);
+        background-color: rgb(186, 228, 239);
       }
 
       @keyframes shadows {
@@ -425,6 +437,7 @@
       }
     }
 
+
   /****************** FONTS ************************/
 
     @font-face {
@@ -434,7 +447,7 @@
       }
   
     @font-face {
-      src: url("fonts/Hawaii\ Killer\ \(v1.2\).otf"); 
+      src: url("fonts/HawaiiKiller.otf"); 
        format:("truetype");
       font-family: "hawaiikiller";
       }
