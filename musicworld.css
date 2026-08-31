@@ -20,6 +20,8 @@
         border: #93a3b5 1.5px solid;
         margin-top: 70px;
         margin-bottom: 50px;
+        position: absolute;
+        z-index:999;
     }
 
     .imagebox {
@@ -48,6 +50,46 @@
       text-align: left;
       width:290px;
       font-size:15px;
+    }
+    
+    .concerttextbox {
+      height:400px;
+      width:580px;
+      margin-left:20px;
+      margin-top:38px;
+      background-color: rgb(248, 252, 255);
+      box-shadow: 0px 0px 10px 5px #aecad9;
+      border:#93a3b5 1.5px solid;
+      overflow:auto;
+      background-image:url(https://i.ibb.co/DPRjxKPc/7db50c7f47c2f95c216f1800ccd53919.jpg);
+    }
+
+    .post {
+      width:85%;
+      margin-left:auto;
+      margin-right:auto;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      background: white;
+      border-image-outset: -35px;
+      border: dashed #99c0e7 2px;
+    }
+
+    img .post {
+      max-width:150px; 
+    }
+
+    .demobox {
+      background-color: #ddedf5;
+      width:140px;
+      height:20px;
+      margin-left:640px;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      text-align: center;
+      border: 5px solid;
+      border-image:url(https://64.media.tumblr.com/6f0c2efb2b0902a5907c60c9d1dcad9e/9b9e0ed89a039867-11/s75x75_c1/90da82e9674eafbcc1f84f71303f353726a700b5.pnj) 8 fill round;
     }
 
   /****************** BUTTONS *****************/
@@ -299,7 +341,7 @@
         margin-top: -10px;
         margin-left: -10px;
         line-height: 110%;
-        font-family: "angelicwar";
+        font-family: "hawaiikiller";
         font-size: 50px;
         text-underline-offset: 5px;
       }
@@ -316,7 +358,7 @@
       p {
         color: #3b4d6f99;
       }
-      
+
       a:link {
         color: #81afc8;
       }
