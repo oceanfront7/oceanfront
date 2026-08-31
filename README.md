@@ -2,6 +2,8 @@
 
 contact information: oceanfrontneocities@proton.me
 
+8/31/2026 update: hello hack club, i took your feedback for my low quality commits and for each ~hourly commit i added a basic title and pretty detailed descriptions (as descriptive as i could be, often 3 sentences). the only commits i didnt add much to would be when i deleted a file or renamed a file (just me deleting old files that often i accidentally uploaded, or renaming a file so it fit in with another page linking it) i tried my best to fix them, this was my first time using github so im sorry!
+
 oceanfront is my personal website that i have been working on for almost two years. its a simple personal site that i use to host pixels/images on, talk about my interests, and connect with others. there is no real 'point' or 'goal' to oceanfront, its just a place for me to express myself in. besides that, i do have one goal, which is to archive as many old website's creations as i can: their pixels, images, drawings, etc.
 
 FAQ: where can i view the site live?
