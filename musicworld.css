@@ -176,6 +176,36 @@
     font-family: 'winkle';
     }
 
+    /* Create two equal columns that floats next to each other */
+    .meow {
+      float: left;
+      width: 15%;
+      padding: 10px;
+    }
+
+    .meow img {
+      margin-top: 8px;
+    }
+
+/* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .photo-caption {
+      background-color: rgb(243, 246, 248);
+      padding: 5px;
+      font-size: 12px;
+      border: 1px solid #7097ab;
+      justify-content: center;
+      align-items:center;
+      text-align: center;
+      overflow:auto;
+      height:35px;
+    }
+
   /****************** MUSIC PLAYER *****************/
 
     #musicplayer{ 
@@ -188,6 +218,7 @@
       position:fixed;
       margin-bottom:20px;  
       display:flex;
+      z-index:9999;
       background: linear-gradient(180deg,rgb(156, 222, 250) 0%, white 45%, rgb(89, 168, 210) 47%, white 100%);
       border:ridge 2px white; /* border around player */
       outline: solid 2px #99c0e7;
