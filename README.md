@@ -26,7 +26,7 @@ types of files: html (90%+), css (~5-10%), js (~1%)
 
 # folders:
 
-archive: 1.0 versions of certain pages, or pages i no longer 'use' or have public on my site. for example, travel.html was replaced by the new and improved travel2.html.
+archive: 1.0 versions of certain pages, or pages i no longer 'use' or have public on my site. for example, old versions of travel.html and aboutme.html are located here
 
 graphics: all the pages of different graphic pages i have (dividers, backgrounds, pixels, etc.)
 
